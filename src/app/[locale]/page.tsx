@@ -19,7 +19,7 @@ export default function Home() {
           priority
           quality={85}
           sizes="100vw"
-          className="object-cover brightness-[0.65] scale-105 transition-transform duration-[20s]"
+          className="object-cover brightness-[0.65] scale-105 transition-transform duration-&lsqb;20s&rsqb;"
         />
 
         {/* Overlay gradient */}
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       {/* Top Destinations Slider */}
-      <section className="relative z-10 ">
+      <section className="relative z-10">
         <SectionSlider
           title="Top Destinations"
           learnMoreHref="/destinations"
@@ -56,20 +56,18 @@ export default function Home() {
         </SectionSlider>
       </section>
 
-      
-
       {/* Recommendation Winter */}
-      <section className="relative z-10 ">
+      <section className="relative z-10">
         <RecommendationGrid title="Recommendation Winter" items={recommendationWinter} />
       </section>
 
       {/* Recommendation Summer */}
-      <section className="relative z-10 ">
+      <section className="relative z-10">
         <RecommendationGrid title="Recommendation Summer" items={recommendationSummer} />
       </section>
 
       {/* Top Attractions */}
-      <section className="relative z-10 ">
+      <section className="relative z-10">
         <TopAttractionsSlider />
       </section>
 
