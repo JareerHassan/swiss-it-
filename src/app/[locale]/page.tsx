@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SectionSlider, SliderCard, RecommendationGrid } from "@/components/sections";
 import TopAttractionsSlider from "@/components/sections/TopAttractionsSlider";
-import { topDestinations, experiences } from "@/data/slider-sections";
+import { topDestinations } from "@/data/slider-sections";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
 
 export default function Home() {
