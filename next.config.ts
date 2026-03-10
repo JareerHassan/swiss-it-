@@ -4,13 +4,13 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: [
-            'images.unsplash.com',
-            'media.myswitzerland.com',
-            'images.pexels.com',
-        ],
-    },
+ images: {
+  domains: [
+    'images.unsplash.com',
+    'media.myswitzerland.com',
+    'images.pexels.com',
+  ],
+},
 };
 
 export default withNextIntl(nextConfig);
