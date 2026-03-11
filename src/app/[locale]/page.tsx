@@ -1,7 +1,7 @@
 // app/page.tsx
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { SectionSlider, SliderCard, RecommendationGrid } from "@/components/sections";
+import { SectionSlider, SliderCard, RecommendationGrid, DiscoverMoreSection } from "@/components/sections";
 import TopAttractionsSlider from "@/components/sections/TopAttractionsSlider";
 import { topDestinations } from "@/data/slider-sections";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
@@ -70,6 +70,9 @@ export default function Home() {
       <section className="relative z-10">
         <TopAttractionsSlider />
       </section>
+
+      {/* Discover More (New Section) */}
+      <DiscoverMoreSection />
 
       {/* Floating Assistant Button */}
       <div className="fixed right-0 top-1/2 z-50 -translate-y-1/2">

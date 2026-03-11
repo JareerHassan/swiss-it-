@@ -9,6 +9,7 @@ const nextConfig = {
     'images.unsplash.com',
     'media.myswitzerland.com',
     'images.pexels.com',
+    'lh3.googleusercontent.com',
   ],
 },
 };

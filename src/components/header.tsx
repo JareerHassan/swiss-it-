@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Search, MapPin, Info } from 'lucide-react'
+import { Menu, Search } from 'lucide-react'
 import { Link } from "@/i18n/routing"
+import HeaderUtilities from '@/components/HeaderUtilities';
 
 const Header = () => {
   // State for hover effect
@@ -44,11 +45,13 @@ const Header = () => {
           </div>
           
           {/* Main Navigation */}
-          <nav className="hidden md:flex space-x-8 items-center font-medium text-lg">
-            <Link href="/destinations" className="hover:text-[#e3000f] transition-colors">Destinations</Link>
-            <Link href="/experiences" className="hover:text-[#e3000f] transition-colors">Experiences</Link>
-            <Link href="/accommodation" className="hover:text-[#e3000f] transition-colors">Accommodation</Link>
-            <Link href="/planning" className="hover:text-[#e3000f] transition-colors">Planning</Link>
+          <nav className="hidden lg:flex space-x-8 items-center font-medium text-lg">
+            <Link href="/" className="hover:text-[#e3000f] transition-colors">About</Link>
+            <Link href="/" className="hover:text-[#e3000f] transition-colors">Services</Link>
+            <Link href="/" className="hover:text-[#e3000f] transition-colors">Blogs</Link>
+            <Link href="/" className="hover:text-[#e3000f] transition-colors">Faq</Link>
+            <Link href="/" className="hover:text-[#e3000f] transition-colors">Contact</Link>
+
             
             {/* Divider */}
             <div className="h-6 w-[1px] bg-white/20 mx-4" />
@@ -60,26 +63,10 @@ const Header = () => {
           </nav>
           
           {/* Right Utilities */}
-          <div className="hidden md:flex items-center space-x-6 font-medium">
-            <Link href="/meetings" className="hover:text-[#e3000f] transition-colors text-sm">Meetings</Link>
-            
-            {/* Minimalist LocalSelect without custom complex styles for now, assume generic text */}
-            <div className="hover:text-[#e3000f] transition-colors text-sm flex items-center gap-1 cursor-pointer">
-               Language <span className="text-[10px]">▼</span>
-            </div>
-            {/* Note: In real app, integrate LocalSelect but style carefully for dark header */}
-            {/* <LocalSelect defaultValue={locale} label="Language"  /> */}
-            
-            <button className="hover:text-[#e3000f] transition-colors">
-              <MapPin className="w-6 h-6" />
-            </button>
-            <button className="hover:text-[#e3000f] transition-colors">
-              <Info className="w-6 h-6" />
-            </button>
-          </div>
+          <HeaderUtilities />
           
           {/* Mobile Menu Trigger */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="hover:bg-white/10 hover:text-white">
@@ -89,12 +76,12 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="bg-[#221115] text-white border-l-[#44222a]">
                 <nav className="flex flex-col space-y-4 mt-8 text-lg">
-                  <Link href="/destinations" className="hover:text-[#e3000f]">Destinations</Link>
-                  <Link href="/experiences" className="hover:text-[#e3000f]">Experiences</Link>
-                  <Link href="/accommodation" className="hover:text-[#e3000f]">Accommodation</Link>
-                  <Link href="/planning" className="hover:text-[#e3000f]">Planning</Link>
+                  <Link href="/" className="hover:text-[#e3000f]">About</Link>
+                  <Link href="/" className="hover:text-[#e3000f]">Services</Link>
+                  <Link href="/" className="hover:text-[#e3000f]">Blogs</Link>
+                  <Link href="/" className="hover:text-[#e3000f]">Faq</Link>
                   <div className="h-[1px] w-full bg-white/20 my-4" />
-                  <Link href="/meetings" className="hover:text-[#e3000f]">Meetings</Link>
+                  <Link href="/" className="hover:text-[#e3000f]">Contact</Link>
                   <span className="hover:text-[#e3000f]">Language</span>
                 </nav>
               </SheetContent>
