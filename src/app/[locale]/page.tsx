@@ -6,6 +6,7 @@ import TopAttractionsSlider from "@/components/sections/TopAttractionsSlider";
 import { topDestinations } from "@/data/slider-sections";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
 
+
 export default function Home() {
   return (
     <main className="relative min-h-screen">

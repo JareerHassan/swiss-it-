@@ -38,9 +38,7 @@ export function RecommendationCard({ item, className }: RecommendationCardProps)
     className
   );
 
-  if (item.href) {
-    return <Link href={item.href} className={cardClasses}>{content}</Link>;
-  }
-
-  return <article className={cardClasses}>{content}</article>;
+  // Link to detail page: use item.href if set (e.g. /experiences/winter-holidays), otherwise /experiences/{id}
+  const detailHref = item.href ?? `/experiences/${item.id}`;
+  return <Link href={detailHref} className={cardClasses}>{content}</Link>;
 }

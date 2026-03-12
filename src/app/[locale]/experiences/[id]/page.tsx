@@ -1,13 +1,11 @@
 import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import { topAttractionsSlides } from "@/data/top-attractions";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
 import AttractionDetailLayout from "@/components/sections/AttractionDetailLayout";
 
 type PageProps = {
-  params: {
-    locale: string;
-    id: string;
-  };
+  params: Promise<{ locale: string; id: string }>;
 };
 
 const DEFAULT_EXPERIENCE_DESCRIPTION =
@@ -35,8 +33,8 @@ function getAllExperiences() {
   return [...recItems, ...attractionItems];
 }
 
-export default function AttractionDetailPage({ params }: PageProps) {
-  const { id } = params;
+export default async function AttractionDetailPage({ params }: PageProps) {
+  const { id } = await params;
 
   const allExperiences = getAllExperiences();
   const experience = allExperiences.find((item) => item.id === id);
@@ -60,9 +58,13 @@ export default function AttractionDetailPage({ params }: PageProps) {
 
 export function generateStaticParams() {
   const allExperiences = getAllExperiences();
-  return allExperiences.map((item) => ({
-    id: item.id,
-  }));
+  const params: { locale: string; id: string }[] = [];
+  for (const locale of routing.locales) {
+    for (const item of allExperiences) {
+      params.push({ locale, id: item.id });
+    }
+  }
+  return params;
 }
 
 
