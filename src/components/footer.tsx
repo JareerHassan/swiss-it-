@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
 
           <div className="text-sm text-zinc-400 font-medium">
-            © {new Date().getFullYear()} Switzerland Tourism
+            © {new Date().getFullYear()} Highland Group
           </div>
 
           {/* Language Selector */}

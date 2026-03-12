@@ -39,7 +39,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <span className="text-[28px] font-bold tracking-tight">
-                swi<span className="text-[#e3000f]">+</span>zerland
+                Highland <span className="text-[#e3000f]">Group</span>
               </span>
             </Link>
           </div>
