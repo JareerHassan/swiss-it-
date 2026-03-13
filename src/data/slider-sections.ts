@@ -4,46 +4,49 @@ import type { SliderCardItem } from '@/components/sections';
 export const topDestinations: SliderCardItem[] = [
   {
     id: 'website-development',
-    imageSrc:
-      '/assets/img-1.jpeg',
+    imageSrc: '/assets/img-1.jpeg',
     imageAlt: 'Website development and digital design workspace',
     label: 'Business Website Development',
+    description:
+      'Modern, multilingual websites built for Swiss businesses to improve digital presence and conversions.',
     href: '/services/website-development',
   },
   {
     id: 'hotel-booking-systems',
-    imageSrc:
-   '/assets/img-2.jpeg',
+    imageSrc: '/assets/img-2.jpeg',
     imageAlt: 'Hotel booking system and hospitality technology',
     label: 'Hotel Direct Booking Solutions',
+    description:
+      'Booking-focused websites helping Swiss hotels increase direct reservations and reduce OTA commissions.',
     href: '/services/hotel-booking-systems',
   },
   {
     id: 'mobile-app-development',
-    imageSrc:
-         '/assets/img-3.jpeg',
-
+    imageSrc: '/assets/img-3.jpeg',
     imageAlt: 'Mobile app development for business growth',
     label: 'Mobile App Development',
+    description:
+      'Custom mobile apps for bookings, customer engagement, and business operations.',
     href: '/services/mobile-app-development',
   },
   {
     id: 'digital-marketing',
-    imageSrc:
-         '/assets/img-5.jpg',
+    imageSrc: '/assets/img-5.jpg',
     imageAlt: 'Digital marketing analytics and growth strategy',
     label: 'Digital Marketing',
+    description:
+      'SEO, Google Ads, and performance campaigns to attract qualified customers.',
     href: '/services/digital-marketing',
   },
   {
     id: 'ai-automation',
-    imageSrc:
-     '/assets/img-4.jpg',
+    imageSrc: '/assets/img-4.jpg',
     imageAlt: 'AI automation and smart business systems',
     label: 'AI & Business Automation',
+    description:
+      'Chatbots, WhatsApp assistants, and workflow automation to save time.',
     href: '/services/ai-automation',
   },
-  
 ];
 
 /** Business Growth Highlights */

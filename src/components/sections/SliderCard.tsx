@@ -26,14 +26,22 @@ export function SliderCard({ item, className }: SliderCardProps) {
         <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/70 via-transparent to-transparent transition-opacity duration-300 group-hover:from-black/80" />
       </div>
 
-      <span className="absolute bottom-4 left-5 right-0 text-start text-xl font-semibold text-white drop-shadow-md transition-all duration-300 group-hover:translate-x-1.5">
-        {item.label}
-      </span>
+      <div className="absolute bottom-4 left-5 right-5 text-start text-white">
+        <span className="block text-xl font-semibold drop-shadow-md transition-all duration-300 group-hover:translate-x-1.5">
+          {item.label}
+        </span>
+
+        {item.description && (
+          <p className="mt-1 text-sm text-white/90 leading-snug line-clamp-2 transition-all duration-300 group-hover:translate-x-1.5">
+            {item.description}
+          </p>
+        )}
+      </div>
     </>
   );
 
   const cardClasses = cn(
-    'group',                           // ← important for group-hover
+    'group',
     'relative flex-shrink-0',
     'w-[min(85vw,380px)]',
     'h-[380px]',
@@ -41,7 +49,7 @@ export function SliderCard({ item, className }: SliderCardProps) {
     CARD_ASPECT,
     'snap-center',
     'transition-all duration-300',
-    'hover:shadow-2xl hover:shadow-black/30', // optional depth
+    'hover:shadow-2xl hover:shadow-black/30',
     className
   );
 

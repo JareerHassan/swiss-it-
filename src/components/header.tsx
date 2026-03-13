@@ -46,11 +46,11 @@ const Header = () => {
           
           {/* Main Navigation */}
           <nav className="hidden lg:flex space-x-8 items-center font-medium text-lg">
-            <Link href="/" className="hover:text-[#e3000f] transition-colors">About</Link>
+            <Link href="/about" className="hover:text-[#e3000f] transition-colors">About</Link>
             <Link href="/" className="hover:text-[#e3000f] transition-colors">Services</Link>
             <Link href="/" className="hover:text-[#e3000f] transition-colors">Blogs</Link>
-            <Link href="/" className="hover:text-[#e3000f] transition-colors">Faq</Link>
-            <Link href="/" className="hover:text-[#e3000f] transition-colors">Contact</Link>
+            <Link href="/faq" className="hover:text-[#e3000f] transition-colors">Faq</Link>
+            <Link href="/contact" className="hover:text-[#e3000f] transition-colors">Contact</Link>
 
             
             {/* Divider */}
@@ -76,10 +76,10 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="bg-[#221115] text-white border-l-[#44222a]">
                 <nav className="flex flex-col space-y-4 mt-8 text-lg">
-                  <Link href="/" className="hover:text-[#e3000f]">About</Link>
+                  <Link href="/about" className="hover:text-[#e3000f]">About</Link>
                   <Link href="/" className="hover:text-[#e3000f]">Services</Link>
                   <Link href="/" className="hover:text-[#e3000f]">Blogs</Link>
-                  <Link href="/" className="hover:text-[#e3000f]">Faq</Link>
+                  <Link href="/faq" className="hover:text-[#e3000f]">Faq</Link>
                   <div className="h-[1px] w-full bg-white/20 my-4" />
                   <Link href="/" className="hover:text-[#e3000f]">Contact</Link>
                   <span className="hover:text-[#e3000f]">Language</span>

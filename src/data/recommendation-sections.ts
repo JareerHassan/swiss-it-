@@ -3,75 +3,84 @@ import type { RecommendationGridItem } from '@/components/sections'
 /** Business Growth – 6 cards */
 export const recommendationWinter: RecommendationGridItem[] = [
   {
-    id: 'Increase Revenue by Up to 25%',
-    imageSrc:
-            '/assets/img-7.jpg',
+    id: 'increase-revenue',
+    imageSrc: '/assets/img-7.jpg',
     imageAlt: 'Business growth and revenue increase analytics',
     label: 'Increase Revenue by Up to 25%',
+    description:
+      'Digital systems designed to convert more visitors into customers and improve business performance.',
     href: '/solutions/increase-revenue',
   },
   {
-    id: 'Reduce OTA and Third-Party Dependence',
-    imageSrc:
-      '/assets/img-8.jpg',
+    id: 'reduce-costs',
+    imageSrc: '/assets/img-8.jpg',
     imageAlt: 'Cost reduction and better business efficiency',
     label: 'Reduce OTA and Third-Party Dependence',
+    description:
+      'Helping hotels and service businesses build stronger direct channels and keep more profit.',
     href: '/solutions/reduce-costs',
   },
   {
-    id: 'Reduce Manual Work by Up to 40%',
-    imageSrc:
-      '/assets/img-9.jpg',
+    id: 'save-time',
+    imageSrc: '/assets/img-9.jpg',
     imageAlt: 'Automation and time saving digital systems',
     label: 'Reduce Manual Work by Up to 40%',
+    description:
+      'AI automation that simplifies repetitive tasks and improves internal workflows.',
     href: '/solutions/save-time',
   },
   {
-    id: 'Improve Customer Response Time by Up to 60%',
-    imageSrc:
-      '/assets/img-10.jpeg',
+    id: 'more-leads',
+    imageSrc: '/assets/img-10.jpeg',
     imageAlt: 'Lead generation and digital marketing growth',
     label: 'Improve Customer Response Time by Up to 60%',
+    description:
+      'Automation and smart communication tools that help businesses respond faster.',
     href: '/solutions/more-leads',
   },
   {
-    id: 'Generate More Qualified Leads',
-    imageSrc:
-      '/assets/img-11.jpg',
+    id: 'better-conversion',
+    imageSrc: '/assets/img-11.jpg',
     imageAlt: 'Better customer experience and higher conversions',
     label: 'Generate More Qualified Leads',
+    description:
+      'Better websites and targeted marketing that attract the right audience.',
     href: '/solutions/better-conversion',
   },
-
 ]
+
 
 /** Services Focus – 6 cards */
 export const recommendationSummer: RecommendationGridItem[] = [
   {
-    id: 'website-development',
+    id: 'ai-automation-case',
     imageSrc:
       'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1280&q=80',
     imageAlt: 'Website development and digital design workspace',
     label: 'Faster Responses Through AI Automation',
+    description:
+      'AI chatbots and automation that help hospitality businesses respond faster to customer inquiries.',
     href: '/services/website-development',
     colSpan2: true,
   },
   {
-    id: 'mobile-app-development',
+    id: 'hotel-booking-case',
     imageSrc:
       'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1280&q=80',
     imageAlt: 'Mobile app development for business growth',
-    label: ' Boosting Direct Bookings and Hotel Profitability',
+    label: 'Boosting Direct Bookings and Hotel Profitability',
+    description:
+      'Modern booking websites designed to increase direct reservations and reduce commissions.',
     href: '/services/mobile-app-development',
   },
   {
-    id: 'digital-marketing',
+    id: 'lead-engine-case',
     imageSrc:
       'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1280&q=80',
     imageAlt: 'Digital marketing strategy and analytics',
     label: 'Turning an Outdated Website into a Lead Engine',
+    description:
+      'A high-converting website and SEO improvements that significantly increased inquiries.',
     href: '/services/digital-marketing',
   },
- 
-
 ]

@@ -10,6 +10,8 @@ export interface SliderCardItem {
   imageAlt: string;
   label: string;
   href?: string;
+   /** Optional supporting copy displayed under the label. */
+  description?: string;
 }
 
 export interface SectionSliderProps {
@@ -27,6 +29,8 @@ export interface RecommendationGridItem {
   imageAlt: string;
   label: string;
   href?: string;
+  /** Optional supporting copy used on some grids. */
+  description?: string;
   /** Span 2 columns (wider card). Default false. */
   colSpan2?: boolean;
 }
