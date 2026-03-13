@@ -60,12 +60,12 @@ export default function Home() {
 
       {/* Recommendation Winter */}
       <section className="relative z-10">
-        <RecommendationGrid title="Business Growth" items={recommendationWinter} />
+        <RecommendationGrid title="Value Offerings" items={recommendationWinter} />
       </section>
 
       {/* Recommendation Summer */}
       <section className="relative z-10">
-        <RecommendationGrid title="Core Services" items={recommendationSummer} />
+        <RecommendationGrid title="Case Studies" items={recommendationSummer} />
       </section>
 
       {/* Top Attractions */}

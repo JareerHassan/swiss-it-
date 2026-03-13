@@ -7,7 +7,7 @@ export const topDestinations: SliderCardItem[] = [
     imageSrc:
       '/assets/img-1.jpeg',
     imageAlt: 'Website development and digital design workspace',
-    label: 'Website Development',
+    label: 'Business Website Development',
     href: '/services/website-development',
   },
   {
@@ -15,7 +15,7 @@ export const topDestinations: SliderCardItem[] = [
     imageSrc:
    '/assets/img-2.jpeg',
     imageAlt: 'Hotel booking system and hospitality technology',
-    label: 'Hotel Booking Systems',
+    label: 'Hotel Direct Booking Solutions',
     href: '/services/hotel-booking-systems',
   },
   {
@@ -40,17 +40,10 @@ export const topDestinations: SliderCardItem[] = [
     imageSrc:
      '/assets/img-4.jpg',
     imageAlt: 'AI automation and smart business systems',
-    label: 'AI Automation',
+    label: 'AI & Business Automation',
     href: '/services/ai-automation',
   },
-  {
-    id: 'crm-workflow-systems',
-    imageSrc:
-   '/assets/img-6.jpg',
-    imageAlt: 'CRM and workflow management system',
-    label: 'CRM & Workflow Systems',
-    href: '/services/crm-workflow-systems',
-  },
+  
 ];
 
 /** Business Growth Highlights */
