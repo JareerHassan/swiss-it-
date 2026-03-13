@@ -4,18 +4,17 @@ import Image from 'next/image';
 
 export default function DiscoverMoreSection() {
   return (
-    <section className="relative z-10 w-full bg-[#221115] py-20 md:py-28 text-white">
+    <section className="relative z-10 w-full bg-[#221115] py-20 text-white md:py-28">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-        
-        {/* Row 1: Original Section 1 */}
+        {/* Row 1 */}
         <div className="grid gap-12 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] md:items-center">
           <div className="relative flex justify-center">
-            <div className="absolute left-4 right-10 top-10 h-64 rounded-[40px] bg-[#f9b321] md:h-72 lg:h-80" />
-            <div className="relative z-10 w-[260px] rounded-[36px] bg-zinc-900 shadow-[0_20px_60px_rgba(0,0,0,0.5)] overflow-hidden md:w-[280px] border border-zinc-800">
+            <div className="absolute left-4 right-10 top-10 h-64 rounded-[40px] bg-[#2563eb] md:h-72 lg:h-80" />
+            <div className="relative z-10 w-[260px] overflow-hidden rounded-[36px] border border-zinc-800 bg-zinc-900 shadow-[0_20px_60px_rgba(0,0,0,0.5)] md:w-[280px]">
               <div className="relative h-[360px] w-full bg-zinc-800">
                 <Image
-                  src="https://lh3.googleusercontent.com/8PzAsw0esLk9g2F11obQKgz2iEzFbhd1Od981PdsTlj86kjkohxNeikoq0Y7UgM4FMRKYJCkFN7sAe9OMrWb8B62O7n-p-TmWiMBkXkN3JaVI3_zfRdJ=w1920-rw"
-                  alt="Booking interface example"
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                  alt="Website development and digital business solutions"
                   fill
                   className="object-cover"
                   sizes="260px"
@@ -23,51 +22,51 @@ export default function DiscoverMoreSection() {
                 />
               </div>
               <div className="flex items-center justify-center gap-3 border-t border-zinc-800 bg-zinc-900 px-5 py-4">
-                <button className="rounded-full bg-[#1a73e8] px-4 py-1.5 text-xs font-medium text-white shadow-sm">
-                  Google Search
-                </button>
+                <span className="rounded-full bg-[#2563eb] px-4 py-1.5 text-xs font-medium text-white shadow-sm">
+                  Website Development
+                </span>
               </div>
             </div>
           </div>
 
           <div className="space-y-4 md:space-y-5">
-            <div className="inline-flex items-center gap-2 rounded-full bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400">
-              <span className="h-2 w-2 rounded-full bg-orange-500" />
-              <span>Featured benefit</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-400">
+              <span className="h-2 w-2 rounded-full bg-blue-500" />
+              <span>Core Service</span>
             </div>
             <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl md:text-[32px]">
-              Use free booking links to get more direct bookings
+              High-performing websites built for business growth
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-base">
-              With free booking links in your profile, you can show real-time rates and availability and send
-              customers to your booking site. All at no cost from Google.
+              Highland Group creates modern websites that help businesses build trust, generate more leads,
+              and turn visitors into customers across Europe.
             </p>
           </div>
         </div>
 
-        {/* Row 2: Original Section 2 */}
+        {/* Row 2 */}
         <div className="mt-24 grid gap-12 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.05fr)] md:items-center">
           <div className="order-2 space-y-4 md:order-1 md:space-y-5">
             <div className="inline-flex items-center gap-2 text-xs font-medium text-emerald-400">
-              <span className="h-4 w-4 rounded-full bg-emerald-500/20 text-[10px] leading-4 text-center">↑</span>
-              <span>Performance</span>
+              <span className="h-4 w-4 rounded-full bg-emerald-500/20 text-center text-[10px] leading-4">↑</span>
+              <span>Efficiency</span>
             </div>
             <h3 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Maximize direct bookings with Hotel Ads (paid)
+              Save time with AI automation and smarter workflows
             </h3>
             <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-base">
-              Run Hotel Ads to promote your profile on Search and Maps. Reach travellers most likely to book and
-              get additional reporting — while retaining control of your terms and conditions.
+              From AI chatbots to automated lead handling and CRM workflows, we help businesses reduce manual
+              work, respond faster, and operate more efficiently.
             </p>
           </div>
 
           <div className="order-1 relative flex justify-center md:order-2">
-            <div className="absolute left-10 right-4 top-10 h-64 rounded-[40px] bg-[#0f9d58] md:h-72 lg:h-80" />
-            <div className="relative z-10 w-[260px] rounded-[36px] bg-zinc-900 shadow-[0_20px_60px_rgba(0,0,0,0.5)] overflow-hidden md:w-[280px] border border-zinc-800">
+            <div className="absolute left-10 right-4 top-10 h-64 rounded-[40px] bg-[#10b981] md:h-72 lg:h-80" />
+            <div className="relative z-10 w-[260px] overflow-hidden rounded-[36px] border border-zinc-800 bg-zinc-900 shadow-[0_20px_60px_rgba(0,0,0,0.5)] md:w-[280px]">
               <div className="relative h-[360px] w-full bg-zinc-800">
                 <Image
-                  src="https://lh3.googleusercontent.com/Xcg4mx-lcSrcvCX08biI45JDSY4yio-yK8lkKJtna3YKJ5128uJeLhvlOFPC-tcpkRyQeeNoaov7qfnLm4z5nd8Ld64CH9DQGkvrY4F2qfsZMG6akv0=w1920-rw"
-                  alt="Hotel Ads example"
+                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+                  alt="AI automation and smart workflow systems"
                   fill
                   className="object-cover"
                   sizes="260px"
@@ -75,61 +74,60 @@ export default function DiscoverMoreSection() {
                 />
               </div>
               <div className="flex items-center justify-center gap-3 border-t border-zinc-800 bg-zinc-900 px-5 py-4">
-                <button className="rounded-full bg-[#1a73e8] px-4 py-1.5 text-xs font-medium text-white shadow-sm">
-                  Google Search
-                </button>
+                <span className="rounded-full bg-[#10b981] px-4 py-1.5 text-xs font-medium text-white shadow-sm">
+                  AI Automation
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Row 3: New Case Study Section (From Image) */}
+        {/* Row 3 */}
         <div className="mt-32 grid gap-12 md:grid-cols-2 md:items-center">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-              How WebHotelier <br />
-              increased bookings<br />
-              at no cost
+              Digital solutions <br />
+              that increase revenue <br />
+              and reduce manual work
             </h2>
             <p className="max-w-md text-zinc-400">
-              In the midst of the pandemic, booking engine WebHotelier needed a cost-effective way to bring in more customers across their 6,000+ hotels. Discover how free booking links helped them accomplish their goal.
+              Highland Group helps businesses across Europe grow with websites, mobile apps, digital
+              marketing, AI automation, and business systems designed for measurable results.
             </p>
-            <a href="#" className="inline-block text-red-700 font-medium hover:underline">
-              Read success story
+            <a href="/contact" className="inline-block font-medium text-blue-400 hover:underline">
+              Book a free consultation
             </a>
-            
+
             {/* Quote Block */}
-            <div className="pt-8 border-t border-zinc-800">
-              <span className="text-4xl text-red-500 font-serif">"</span>
-              <p className="text-lg text-zinc-200 mt-[-10px]">
-                We're thrilled that hotels working with WebHotelier saw more than $4.7M in additional revenue from free booking links this summer.
+            <div className="border-t border-zinc-800 pt-8">
+              <span className="font-serif text-4xl text-blue-400">"</span>
+              <p className="mt-[-10px] text-lg text-zinc-200">
+                We build practical digital systems that help businesses attract more customers, improve
+                efficiency, and grow with confidence.
               </p>
-              <p className="mt-4 text-sm font-medium text-zinc-500">
-                Apostolos Tsakpinis, CTO and founder, WebHotelier
-              </p>
+              <p className="mt-4 text-sm font-medium text-zinc-500">Highland Group</p>
             </div>
           </div>
 
           <div className="relative">
-            {/* 25% Increase Badge */}
-            <div className="absolute -left-6 bottom-12 z-20 bg-red-700 p-6 rounded-2xl rounded-br-none shadow-xl min-w-[140px]">
-                <div className="text-white text-xl">↑</div>
-                <div className="text-3xl font-bold text-white">25 %</div>
-                <div className="text-xs text-blue-100">increase in bookings</div>
+            {/* Stats Badge */}
+            <div className="absolute -left-6 bottom-12 z-20 min-w-[160px] rounded-2xl rounded-br-none bg-blue-600 p-6 shadow-xl">
+              <div className="text-xl text-white">↑</div>
+              <div className="text-3xl font-bold text-white">25%</div>
+              <div className="text-xs text-blue-100">potential revenue growth with better digital systems</div>
             </div>
-            
+
             {/* Main Image Container */}
             <div className="relative h-[450px] w-full overflow-hidden rounded-tl-[80px] rounded-br-[80px]">
               <Image
-                src="https://lh3.googleusercontent.com/Xq8vw7xP5ASh2Qg8QhMtzNEBQjhpqKPWyNurcLzeO0iVjOiPVoLnXKPSGY9P05eE4DhvWWLKdMhWeb-2U9YWZqbLsCqbU49IPJNsVAIYTeB8go1WMQ=w1920-rw"
-                alt="WebHotelier Success Story"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+                alt="Business growth dashboard and analytics"
                 fill
                 className="object-cover"
               />
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

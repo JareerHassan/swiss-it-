@@ -1,108 +1,98 @@
 import type { SliderCardItem } from '@/components/sections';
 
-/** Top Destinations – cities/regions */
+/** Core Services */
 export const topDestinations: SliderCardItem[] = [
   {
-    id: 'geneva',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2022/10/26/14/20/49/a-city-geneva-jet-deau.jpg',
-    imageAlt: 'Geneva waterfront with boats and city',
-    label: 'Geneva',
-    href: '/destinations/geneva',
+    id: 'website-development',
+    imageSrc:
+      '/assets/img-1.jpeg',
+    imageAlt: 'Website development and digital design workspace',
+    label: 'Website Development',
+    href: '/services/website-development',
   },
   {
-    id: 'lugano',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/resources/places/l/u/lugano/images%20winter/45451_32001800.jpeg',
-    imageAlt: 'Lugano lake and mountains',
-    label: 'Lugano',
-    href: '/destinations/lugano',
+    id: 'hotel-booking-systems',
+    imageSrc:
+   '/assets/img-2.jpeg',
+    imageAlt: 'Hotel booking system and hospitality technology',
+    label: 'Hotel Booking Systems',
+    href: '/services/hotel-booking-systems',
   },
   {
-    id: 'zermatt',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2024/07/03/14/44/05/zermatt-cervo-mountain-resort.jpg',
-    imageAlt: 'Zermatt Matterhorn and alpine landscape',
-    label: 'Zermatt',
-    href: '/destinations/zermatt',
+    id: 'mobile-app-development',
+    imageSrc:
+         '/assets/img-3.jpeg',
+
+    imageAlt: 'Mobile app development for business growth',
+    label: 'Mobile App Development',
+    href: '/services/mobile-app-development',
   },
   {
-    id: 'zurich',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2023/01/24/07/11/56/zuerich-aerial.jpg',
-    imageAlt: 'Zurich old town and Limmat',
-    label: 'Zurich',
-    href: '/destinations/zurich',
-  },
-   {
-    id: 'lucerne',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/st/gadmin/images/cities/winter/cities/st0035250_28410.jpg',
-    imageAlt: 'Lucerne Chapel Bridge',
-    label: 'Lucerne',
-    href: '/destinations/lucerne',
+    id: 'digital-marketing',
+    imageSrc:
+         '/assets/img-5.jpg',
+    imageAlt: 'Digital marketing analytics and growth strategy',
+    label: 'Digital Marketing',
+    href: '/services/digital-marketing',
   },
   {
-    id: 'interlaken',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2022/11/09/09/53/56/interlaken-with-triumvirate-eiger-mnch-and-jungfrau.jpg',
-    imageAlt: 'Interlaken with Eiger, Mönch, and Jungfrau',
-    label: 'Interlaken',
-    href: '/destinations/interlaken',
+    id: 'ai-automation',
+    imageSrc:
+     '/assets/img-4.jpg',
+    imageAlt: 'AI automation and smart business systems',
+    label: 'AI Automation',
+    href: '/services/ai-automation',
   },
-  
-    {
-    id: 'bern',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/resources/places/b/e/bern/images%20winter/29044_32001800.jpeg',
-    imageAlt: 'Bern',
-    label: 'Bern',
-    href: '/destinations/bern',
-  },
-    {
-    id: 'lausanne',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/st/images/places/lausanne-lt_www_diapo_28409.jpg',
-    imageAlt: 'Lausanne',
-    label: 'Lausanne',
-    href: '/destinations/lausanne',
-  },
-     {
-    id: 'st.moritz',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_400,h_400/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2024/07/04/07/11/26/st-moritz-kulm-hotel-exterior-view-winter.jpg',
-    imageAlt: 'St. Moritz',
-    label: 'St. Moritz',
-    href: '/destinations/st.moritz',
+  {
+    id: 'crm-workflow-systems',
+    imageSrc:
+   '/assets/img-6.jpg',
+    imageAlt: 'CRM and workflow management system',
+    label: 'CRM & Workflow Systems',
+    href: '/services/crm-workflow-systems',
   },
 ];
 
-/** Experiences – activities and themes */
+/** Business Growth Highlights */
 export const experiences: SliderCardItem[] = [
   {
-    id: 'skiing',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_fill,g_auto,w_800,h_600/f_auto,q_80/https://www.myswitzerland.com/-/media/st/images/inspirationcalendar/skiing-alps.jpg',
-    imageAlt: 'Skiing in the Swiss Alps',
-    label: 'Skiing',
-    href: '/experiences/skiing',
+    id: 'GOOGLE ADS AGENCY',
+    imageSrc:
+      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Business growth and revenue increase dashboard',
+    label: 'GOOGLE ADS AGENCY',
+    href: '/solutions/increase-revenue',
   },
   {
-    id: 'hiking',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_fill,g_auto,w_800,h_600/f_auto,q_80/https://www.myswitzerland.com/-/media/st/images/inspirationcalendar/hiking-trails.jpg',
-    imageAlt: 'Hiking in the mountains',
-    label: 'Hiking',
-    href: '/experiences/hiking',
+    id: 'reduce-commission-costs',
+    imageSrc:
+      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Reduce costs with direct booking and automation',
+    label: 'Reduce Costs',
+    href: '/solutions/reduce-costs',
   },
   {
-    id: 'lakes',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_fill,g_auto,w_800,h_600/f_auto,q_80/https://www.myswitzerland.com/-/media/st/images/inspirationcalendar/lake-geneva.jpg',
-    imageAlt: 'Lake Geneva and vineyards',
-    label: 'Lakes & Vineyards',
-    href: '/experiences/lakes',
+    id: 'save-time-with-automation',
+    imageSrc:
+      'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Automation tools saving time for businesses',
+    label: 'Save Time',
+    href: '/solutions/save-time',
   },
   {
-    id: 'rail',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_fill,g_auto,w_800,h_600/f_auto,q_80/https://www.myswitzerland.com/-/media/st/images/inspirationcalendar/glacier-express.jpg',
-    imageAlt: 'Scenic train journey',
-    label: 'Scenic Rail',
-    href: '/experiences/rail',
+    id: 'grow-online',
+    imageSrc:
+      'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Stronger online presence for modern businesses',
+    label: 'Grow Online',
+    href: '/solutions/grow-online',
   },
   {
-    id: 'culture',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_fill,g_auto,w_800,h_600/f_auto,q_80/https://www.myswitzerland.com/-/media/st/images/inspirationcalendar/bern-old-town.jpg',
-    imageAlt: 'Swiss culture and heritage',
-    label: 'Culture & Heritage',
-    href: '/experiences/culture',
+    id: 'better-customer-experience',
+    imageSrc:
+      'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Improved customer experience through digital solutions',
+    label: 'Better Customer Experience',
+    href: '/solutions/customer-experience',
   },
 ];

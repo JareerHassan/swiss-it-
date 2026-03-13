@@ -1,96 +1,107 @@
-import type { RecommendationGridItem } from '@/components/sections';
+import type { RecommendationGridItem } from '@/components/sections'
 
-/** Recommendation winter – 7 cards: 2+2+2 then 1 full-width */
+/** Business Growth – 6 cards */
 export const recommendationWinter: RecommendationGridItem[] = [
   {
-    id: 'winter-holidays',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_640,h_640/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/experiences/winter/meta%20page%20image%20all%20season/49575_32001800.jpeg',
-    imageAlt: 'Skiing in the snow-covered Alps',
-    label: 'Winter holidays',
-    href: '/experiences/winter-holidays',
+    id: 'GOOGLE ADS AGENCY',
+    imageSrc:
+            '/assets/img-7.jpg',
+    imageAlt: 'Business growth and revenue increase analytics',
+    label: 'GOOGLE ADS AGENCY',
+    href: '/solutions/increase-revenue',
   },
   {
-    id: 'museums',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_640,h_640/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2022/03/09/07/04/49/winterthur-oskar-reinhart-museum.jpg',
-    imageAlt: 'Art museum interior with paintings',
-    label: 'Museums',
-    href: '/experiences/museums',
+    id: 'INSTAGRAM ADS AGENCY',
+    imageSrc:
+      '/assets/img-8.jpg',
+    imageAlt: 'Cost reduction and better business efficiency',
+    label: 'INSTAGRAM ADS AGENCY',
+    href: '/solutions/reduce-costs',
   },
   {
-    id: 'winter-excursions',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2022/12/05/14/45/31/sils-in-the-engadine-lake-sils.jpg',
-    imageAlt: 'Frozen lake and snow-covered mountains',
-    label: 'Winter: Excursions & destinations',
-    href: '/experiences/winter-excursions',
+    id: 'FACEBOOK ADS AGENCY',
+    imageSrc:
+      '/assets/img-9.jpg',
+    imageAlt: 'Automation and time saving digital systems',
+    label: 'FACEBOOK ADS AGENCY',
+    href: '/solutions/save-time',
   },
   {
-    id: 'mountain-excursions',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_640,h_640/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/experiences/adventure%20rides/mountain%20railways/meta%20page%20image%20winter/36551_32001800.jpeg',
-    imageAlt: 'Snow-laden pines and mountains',
-    label: 'Mountain excursions',
-    href: '/experiences/mountain-excursions',
+    id: 'LINKEDIN ADS AGENCY',
+    imageSrc:
+      '/assets/img-10.jpeg',
+    imageAlt: 'Lead generation and digital marketing growth',
+    label: 'LINKEDIN ADS AGENCY',
+    href: '/solutions/more-leads',
   },
   {
-    id: 'panoramic-trains',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/resources/places/b/a/basel/images%20winter/26800_32001800.jpeg',
-    imageAlt: 'Red train on stone viaduct in winter',
-    label: 'Premium panoramic trains',
-    href: '/experiences/panoramic-trains',
+    id: 'SEO AGENCY',
+    imageSrc:
+      '/assets/img-11.jpg',
+    imageAlt: 'Better customer experience and higher conversions',
+    label: 'SEO AGENCY',
+    href: '/solutions/better-conversion',
   },
   {
-    id: 'city-tips',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/global/teasers/grid%20teaser/summer/grid%20teaser%20brauchtum%20und%20tradition%20sommer/image%20all%20season/55928_16001200.jpeg',
-    imageAlt: 'Historic city by the river at dusk',
-    label: 'City: tips for holidays and outings',
-    href: '/experiences/city-tips',
+    id: 'GEO AGENCY',
+    imageSrc:
+      '/assets/img-12.jpg',
+    imageAlt: 'Modern digital presence for European businesses',
+    label: 'GEO AGENCY',
+    href: '/solutions/digital-presence',
   },
- 
-];
+]
 
-/** Recommendation summer – 6 cards: 1 large, 2+2, then 1 full-width */
+/** Services Focus – 6 cards */
 export const recommendationSummer: RecommendationGridItem[] = [
   {
-    id: 'grand-train-tour',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/global/stage%20header/image%20all%20season/38624_32001800.jpeg',
-    imageAlt: 'Scenic train through green hills and mountains',
-    label: 'Grand Train Tour of Switzerland',
-    href: '/experiences/grand-train-tour',
+    id: 'website-development',
+    imageSrc:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'Website development and digital design workspace',
+    label: 'Website Development',
+    href: '/services/website-development',
     colSpan2: true,
   },
   {
-    id: 'summer-vacation-tips',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/celum%20connect/2022/03/08/13/58/41/rorschach-panorama-with-sunset-on-lake-constance.jpg',
-    imageAlt: 'Hillside with flowers overlooking lake and town',
-    label: 'Summer: Vacation and Excursion Tips',
-    href: '/experiences/summer-tips',
+    id: 'mobile-app-development',
+    imageSrc:
+      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'Mobile app development for business growth',
+    label: 'Mobile App Development',
+    href: '/services/mobile-app-development',
   },
   {
-    id: 'excursions',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_640,h_640/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/experiences/summer%20and%20autumn/excursions/meta%20page%20image/39055_800600.jpeg',
-    imageAlt: 'Stone bridge over clear mountain stream',
-    label: 'Excursions',
-    href: '/experiences/excursions',
+    id: 'digital-marketing',
+    imageSrc:
+      'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'Digital marketing strategy and analytics',
+    label: 'Digital Marketing',
+    href: '/services/digital-marketing',
   },
   {
-    id: 'nature',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_640,h_640/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/global/stage%20header/image%20all%20season/44941_32001800.jpeg',
-    imageAlt: 'Serene lake reflecting mountains at dusk',
-    label: 'Nature',
-    href: '/experiences/nature',
+    id: 'ai-automation',
+    imageSrc:
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'AI automation and smart workflow systems',
+    label: 'AI Automation',
+    href: '/services/ai-automation',
   },
   {
-    id: 'grand-tour-switzerland',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/global/teasers/grid%20teaser/summer/grid%20teaser%20grand%20tour%20of%20switzerland/image%20all%20season/58925_16001200.jpeg',
-    imageAlt: 'Winding mountain road with hairpin turn',
-    label: 'Grand Tour of Switzerland',
-    href: '/experiences/grand-tour',
+    id: 'hotel-booking-systems',
+    imageSrc:
+      'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'Hotel booking system and hospitality technology',
+    label: 'Hotel Booking Systems',
+    href: '/services/hotel-booking-systems',
   },
   {
-    id: 'family-excursions',
-    imageSrc: 'https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_1280,h_600/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/global/teasers/grid%20teaser/family/grid%20teaser%20family%20experiences%20summer/image%20all%20season/63422_16001200.jpeg',
-    imageAlt: 'Family in park or natural setting',
-    label: 'Family excursions',
-    href: '/experiences/family',
+    id: 'crm-workflow-systems',
+    imageSrc:
+      'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1280&q=80',
+    imageAlt: 'CRM and workflow system for modern businesses',
+    label: 'CRM & Workflow Systems',
+    href: '/services/crm-workflow-systems',
     colSpan2: true,
   },
-];
+]

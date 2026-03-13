@@ -28,16 +28,17 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6 sm:px-12 md:px-16">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl mb-4 md:mb-6 drop-shadow-lg">
-            We need Switzerland.
-          </h1>
-          <p className="text-xl text-white/90 md:text-2xl lg:text-3xl mb-8 md:mb-10 drop-shadow-md">
-            Get inspired now!
+              <p className="text-xl text-white/90 md:text-2xl lg:text-2xl mb-4 drop-shadow-md">
+           Highland Group
           </p>
+          <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl mb-4 md:mb-6 drop-shadow-lg max-w-5xl">
+          Smart Digital Solutions for Swiss Businesses
+          </h1>
+        
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-black text-lg px-10 py-7 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            className="rounded-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-black text-lg px-10 py-6 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Start Exploring
           </Button>
@@ -47,7 +48,7 @@ export default function Home() {
       {/* Top Destinations Slider */}
       <section className="relative z-10">
         <SectionSlider
-          title="Top Destinations"
+          title="Core Services"
           learnMoreHref="/destinations"
           learnMoreLabel="Learn more"
         >
@@ -59,12 +60,12 @@ export default function Home() {
 
       {/* Recommendation Winter */}
       <section className="relative z-10">
-        <RecommendationGrid title="Recommendation Winter" items={recommendationWinter} />
+        <RecommendationGrid title="Business Growth" items={recommendationWinter} />
       </section>
 
       {/* Recommendation Summer */}
       <section className="relative z-10">
-        <RecommendationGrid title="Recommendation Summer" items={recommendationSummer} />
+        <RecommendationGrid title="Core Services" items={recommendationSummer} />
       </section>
 
       {/* Top Attractions */}
