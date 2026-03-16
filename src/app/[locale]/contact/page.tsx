@@ -1,186 +1,149 @@
 "use client";
 
-import { Breadcrumb } from "@/components/Breadcrumb";
-import { Send, Mail, Clock, ShieldCheck, ArrowUpRight } from "lucide-react";
-import Image from "next/image";
+import Breadcrumb from "@/components/Breadcrumb";
+import { Send, MapPin, Mail, Sparkles, Phone } from "lucide-react";
 
 export default function Contact() {
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Contact" }
+  ];
+
   return (
-    <main className="min-h-screen bg-[#0a0506] text-slate-50 selection:bg-red-500/30 selection:text-white">
-      {/* Hero Section */}
-   <section className="relative pt-32 pb-16  md:pb-24 overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent opacity-50 pointer-events-none" />
-  
-          <div className="container mx-auto  px-8 relative z-10">
-  
-  
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]">
-                 Let's Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">Together</span>
-                </h1>
-                <p className="max-w-xl text-lg md:text-xl text-slate-400 leading-relaxed font-light">
-Whether you have a fully-formed brief or just the spark of an idea, 
-              reach out. We help brands navigate the digital landscape with precision.
-                </p>
+    <main className="min-h-screen bg-bg-soft text-charcoal selection:bg-accent-red/30">
+      {/* Breadcrumb Section with soft gradient */}
+      <div className="bg-gradient-to-b from-bg-soft/50 to-transparent">
+        <Breadcrumb
+          items={breadcrumbItems}
+          title="Let's Build Together"
+          subtitle="Whether you have a fully-formed brief or just the spark of an idea, reach out."
+          description="We help brands navigate the digital landscape with precision."
+        />
+      </div>
+
+      <section className="py-20 md:py-28 px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
+
+          {/* Left Side: Visuals & Info */}
+          <div className="lg:col-span-5 space-y-12 order-2 lg:order-1">
+            <div className="relative z-10 space-y-8 text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-bg-main text-accent-red text-sm font-medium mb-2">
+                <Sparkles className="w-4 h-4" /> Available for new projects
               </div>
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-rose-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-2xl border border-white/10">
-                  <Image
-                    src="https://images.pexels.com/photos/1181567/pexels-photo-1181567.jpeg"
-                    alt="Team collaboration"
-                    fill
-                    className="object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0506] via-transparent to-transparent" />
-                </div>
+
+              <h2 className="text-4xl md:text-6xl font-semibold text-charcoal">
+                Let’s build <br />
+                <span className="text-accent-red">your dream.</span>
+              </h2>
+
+              <p className="text-md text-muted max-w-md leading-relaxed">
+                Got an idea? A dream project? Or just want to chat? Drop me a message and I'll get back to you within 24 hours.
+              </p>
+            </div>
+
+            {/* Main Image */}
+            <div className="relative mx-auto lg:mx-0 max-w-sm">
+              <div className="absolute inset-0 bg-red-200 rounded-[2rem] rotate-3 scale-105 opacity-30" />
+              <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80"
+                  alt="Creative Workspace"
+                  className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-1000"
+                />
               </div>
             </div>
           </div>
-        </section>
 
-      {/* Main Content Grid */}
-      <section className="pb-32 relative z-10">
-        <div className="container mx-auto  px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            
-            {/* Form Column */}
-            <div className="lg:col-span-7">
-              <div className="relative group">
-                {/* Subtle outer glow on the whole form container */}
-                <div className="absolute -inset-1 bg-gradient-to-b from-white/5 to-transparent rounded-[2rem] blur-xl opacity-50 transition duration-1000 group-hover:opacity-100" />
-                
-                <form className="relative space-y-8 rounded-[2rem] border border-white/10 bg-[#0d0708]/80 backdrop-blur-xl p-8 md:p-12 shadow-2xl">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Name Input */}
-                    <div className="space-y-2 group/field">
-                      <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within/field:text-red-500 transition-colors">
-                        Full Name
-                      </label>
-                      <input
-                        id="name"
-                        type="text"
-                        className="w-full bg-white/[0.03] border-b border-white/10 px-0 py-3 text-base text-white outline-none transition-all focus:border-red-600 placeholder:text-slate-600"
-                        placeholder="John Doe"
-                      />
-                    </div>
+          {/* Right Side: Modern Form */}
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="bg-bg-main p-8 md:p-12 rounded-[2.5rem] shadow-[0_20px_50px_rgba(217,31,38,0.15)] border border-border-light relative overflow-hidden">
+              {/* Form Decorative Blur */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-bg-soft rounded-full -mr-16 -mt-16 blur-3xl" />
 
-                    {/* Email Input */}
-                    <div className="space-y-2 group/field">
-                      <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within/field:text-red-500 transition-colors">
-                        Email Address
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        className="w-full bg-white/[0.03] border-b border-white/10 px-0 py-3 text-base text-white outline-none transition-all focus:border-red-600 placeholder:text-email@company.com"
-                        placeholder="you@company.com"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Company & Topic Row */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="space-y-2 group/field">
-                      <label htmlFor="company" className="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within/field:text-red-500 transition-colors">
-                        Organization
-                      </label>
-                      <input
-                        id="company"
-                        type="text"
-                        className="w-full bg-white/[0.03] border-b border-white/10 px-0 py-3 text-base text-white outline-none transition-all focus:border-red-600 placeholder:text-slate-600"
-                        placeholder="Company Name"
-                      />
-                    </div>
-                    <div className="space-y-2 group/field">
-                      <label htmlFor="topic" className="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within/field:text-red-500 transition-colors">
-                        Project Type
-                      </label>
-                      <select
-                        id="topic"
-                        className="w-full bg-transparent border-b border-white/10 px-0 py-3 text-base text-white outline-none transition-all focus:border-red-600 appearance-none cursor-pointer"
-                      >
-                        <option className="bg-[#0a0506]">Digital Strategy</option>
-                        <option className="bg-[#0a0506]">Product Design</option>
-                        <option className="bg-[#0a0506]">Development</option>
-                        <option className="bg-[#0a0506]">General Enquiry</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Message Field */}
-                  <div className="space-y-2 group/field">
-                    <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within/field:text-red-500 transition-colors">
-                      How can we help?
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={4}
-                      className="w-full bg-white/[0.03] border-b border-white/10 px-0 py-3 text-base text-white outline-none transition-all focus:border-red-600 resize-none placeholder:text-slate-600"
-                      placeholder="Tell us about your objectives and timelines..."
+              <form className="relative z-10 space-y-6">
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-accent-red ml-1">First Name</label>
+                    <input
+                      type="text"
+                      className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted"
+                      placeholder="Jane"
+                      required
                     />
                   </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-accent-red ml-1">Last Name</label>
+                    <input
+                      type="text"
+                      className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted"
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
 
-                  <button
-                    type="submit"
-                    className="group relative flex items-center gap-3 bg-red-600 text-white px-10 py-5 rounded-full font-bold transition-all hover:bg-red-500 active:scale-95 shadow-lg shadow-red-900/20 overflow-hidden"
-                  >
-                    <span className="relative z-10">Send Proposal</span>
-                    <Send className="w-4 h-4 relative z-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                  </button>
-                </form>
-              </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-semibold text-accent-red ml-1">Email Address</label>
+                  <input
+                    type="email"
+                    className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted"
+                    placeholder="hello@example.com"
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-semibold text-accent-red ml-1">Your Message</label>
+                  <textarea
+                    rows={5}
+                    className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted resize-none"
+                    placeholder="Tell me about your project..."
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-5 bg-accent-red hover:bg-red-700 text-white font-bold text-lg rounded-2xl shadow-lg shadow-accent-red/30 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3 group"
+                >
+                  Send Message
+                  <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </button>
+              </form>
             </div>
+          </div>
 
-            {/* Sidebar Column */}
-            <aside className="lg:col-span-5 space-y-8 lg:pl-12">
-              {/* Trust Cards */}
-              <div className="space-y-4">
-                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-red-500">Quick Contact</h3>
-                <div className="p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors group">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-xl bg-red-600/10 text-red-500 group-hover:scale-110 transition-transform">
-                      <Mail className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold uppercase text-slate-500 mb-1">Direct Email</p>
-                      <a href="mailto:hello@highland-group.example" className="text-lg font-medium text-white flex items-center gap-1 hover:text-red-400 transition-colors">
-                        hello@highland-group.com
-                        <ArrowUpRight className="w-4 h-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 rounded-2xl border border-white/5 bg-white/[0.02]">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-xl bg-red-600/10 text-red-500">
-                      <Clock className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold uppercase text-slate-500 mb-1">Response Time</p>
-                      <p className="text-lg font-medium text-white">Within 24 hours</p>
-                      <p className="text-sm text-slate-400 mt-1">Monday through Friday, 9am — 6pm.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Strategy Note */}
-              <div className="p-8 rounded-[2rem] bg-gradient-to-br from-[#1a0b0e] to-transparent border border-white/5">
-                <ShieldCheck className="w-8 h-8 text-red-500 mb-6" />
-                <h4 className="text-xl font-bold mb-4">Our Partnership Model</h4>
-                <p className="text-slate-400 leading-relaxed text-sm">
-                  We don't just "take orders." We act as your strategic implementation partner. 
-                  Every inquiry is reviewed by our lead consultants to ensure we are the right fit for your business goals.
-                </p>
-              </div>
-            </aside>
-
+        </div>
+      </section>
+      <section className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-20">
+        <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:shadow-xl transition-all">
+          <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 rounded-xl text-accent-red">
+            <MapPin className="w-7 h-7" />
+          </div>
+          <div>
+            <p className="text-xs text-charcoal font-bold uppercase tracking-wider">Location</p>
+            <p className="text-sm font-medium text-muted">Washington DC, 20002</p>
           </div>
         </div>
+
+        <a href="mailto:info@red@gmail.com" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
+          <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl group-hover/link:scale-110 transition-transform">
+            <Mail className="w-7 h-7" />
+          </div>
+          <div>
+            <p className="text-xs text-accent-red font-bold uppercase tracking-wider">Email Me</p>
+            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">info@red@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="tel:+1234567890" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
+          <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl group-hover/link:scale-110 transition-transform">
+            <Phone className="w-7 h-7" />
+          </div>
+          <div>
+            <p className="text-xs text-accent-red font-bold uppercase tracking-wider">Call Us</p>
+            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">+1 234 567 890</p>
+          </div>
+        </a>
       </section>
     </main>
   );

@@ -10,6 +10,12 @@ export default {
   theme: {
   	extend: {
   		colors: {
+  			/* Design system – use across project */
+  			"bg-main": "var(--color-bg-main)",
+  			"bg-soft": "var(--color-bg-soft)",
+  			"border-light": "var(--color-border-light)",
+  			"charcoal": "var(--color-text-primary)",
+  			"accent-red": "var(--color-accent-red)",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -29,7 +35,7 @@ export default {
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
+  				DEFAULT: 'var(--color-text-muted)',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {

@@ -4,7 +4,7 @@ import type { SliderCardItem } from '@/components/sections';
 export const topDestinations: SliderCardItem[] = [
   {
     id: 'website-development',
-    imageSrc: '/assets/img-1.jpeg',
+    imageSrc: '/assets/img-13.png',
     imageAlt: 'Website development and digital design workspace',
     label: 'Business Website Development',
     description:
@@ -13,7 +13,7 @@ export const topDestinations: SliderCardItem[] = [
   },
   {
     id: 'hotel-booking-systems',
-    imageSrc: '/assets/img-2.jpeg',
+    imageSrc: '/assets/img-14.png',
     imageAlt: 'Hotel booking system and hospitality technology',
     label: 'Hotel Direct Booking Solutions',
     description:
@@ -22,7 +22,7 @@ export const topDestinations: SliderCardItem[] = [
   },
   {
     id: 'mobile-app-development',
-    imageSrc: '/assets/img-3.jpeg',
+    imageSrc: '/assets/img-15.png',
     imageAlt: 'Mobile app development for business growth',
     label: 'Mobile App Development',
     description:
@@ -31,7 +31,7 @@ export const topDestinations: SliderCardItem[] = [
   },
   {
     id: 'digital-marketing',
-    imageSrc: '/assets/img-5.jpg',
+    imageSrc: '/assets/img-16.png',
     imageAlt: 'Digital marketing analytics and growth strategy',
     label: 'Digital Marketing',
     description:
@@ -40,7 +40,7 @@ export const topDestinations: SliderCardItem[] = [
   },
   {
     id: 'ai-automation',
-    imageSrc: '/assets/img-4.jpg',
+    imageSrc: '/assets/img-17.jpeg',
     imageAlt: 'AI automation and smart business systems',
     label: 'AI & Business Automation',
     description:

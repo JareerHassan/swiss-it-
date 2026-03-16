@@ -44,7 +44,7 @@ export default async function AttractionDetailPage({ params }: PageProps) {
   }
 
   return (
-    <main className="bg-[#0b0507] text-white min-h-screen">
+    <main className="bg-bg-main text-charcoal min-h-screen">
       <AttractionDetailLayout
         title={experience.title}
         description={experience.description}

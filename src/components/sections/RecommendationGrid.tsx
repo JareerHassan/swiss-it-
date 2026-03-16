@@ -24,7 +24,7 @@ export function RecommendationGrid({ title, items, className }: RecommendationGr
   );
 
   return (
-    <section className={cn('bg-[#221115] py-12 md:py-16 text-white', className)}>
+    <section className={cn('bg-bg-soft py-12 md:py-16 text-charcoal border-t border-border-light', className)}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">{title}</h2>
 

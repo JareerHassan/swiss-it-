@@ -94,7 +94,7 @@ export default function AttractionDetailLayout({
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#1a0d0f] text-white antialiased" style={{ scrollBehavior: 'smooth' }}>
+    <div className="min-h-screen bg-bg-main text-charcoal antialiased" style={{ scrollBehavior: 'smooth' }}>
       {/* 1. Hero: full-width image + centered heading only */}
       <header className="relative h-[70vh] min-h-[320px] w-full overflow-hidden">
         <Image
@@ -105,7 +105,7 @@ export default function AttractionDetailLayout({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a0d0f] via-[#1a0d0f]/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="relative z-10 text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl md:text-6xl lg:text-7xl">
             {title}
@@ -113,8 +113,8 @@ export default function AttractionDetailLayout({
         </div>
       </header>
 
-      {/* 2. Dark nav bar below hero – red underline for active */}
-      <nav className="sticky top-0 z-40 border-b border-white/10 bg-[#1a0d0f]">
+      {/* 2. Nav bar below hero – accent underline for active */}
+      <nav className="sticky top-0 z-40 border-b border-border-light bg-bg-main">
         <div className="mx-auto max-w-6xl overflow-x-auto px-4 sm:px-6 lg:px-8">
           <ul className="flex min-w-max gap-6 py-4" role="navigation" aria-label="Page sections">
             {NAV_ITEMS.map(({ id, label }) => (
@@ -123,11 +123,11 @@ export default function AttractionDetailLayout({
                   type="button"
                   onClick={() => scrollToSection(id)}
                   className={`relative whitespace-nowrap pb-1 text-sm font-medium transition-colors
-                    ${activeSection === id ? 'text-white' : 'text-white/80 hover:text-white'}`}
+                    ${activeSection === id ? 'text-charcoal' : 'text-muted hover:text-charcoal'}`}
                 >
                   {label}
                   {activeSection === id && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-500" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent-red" />
                   )}
                 </button>
               </li>
@@ -136,29 +136,29 @@ export default function AttractionDetailLayout({
         </div>
       </nav>
 
-      <main className="bg-[#1a0d0f]">
+      <main className="bg-bg-main">
         {/* 3. Overview: two columns – intro text + widget card (e.g. Weather today) */}
         <section
           id="overview"
           ref={setRef('overview')}
-          className="scroll-mt-28 border-b border-white/10 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 border-b border-border-light bg-bg-soft py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-10 md:grid-cols-[1fr,minmax(260px,320px)] md:items-start">
               <div>
-                <p className="text-[15px] leading-[1.8] text-white/90 sm:text-base">
+                <p className="text-[15px] leading-[1.8] text-charcoal sm:text-base">
                   {description}
                 </p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <p className="text-xs font-semibold uppercase tracking-wider text-white/60">Weather today</p>
+              <div className="rounded-2xl border border-border-light bg-bg-main p-6">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted">Weather today</p>
                 <div className="mt-4 flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/10">
-                    <CloudSun className="h-8 w-8 text-amber-400/90" />
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-bg-soft">
+                    <CloudSun className="h-8 w-8 text-accent-red/90" />
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-white">14°</p>
-                    <p className="text-sm text-white/70">Mostly sunny</p>
+                    <p className="text-3xl font-bold text-charcoal">14°</p>
+                    <p className="text-sm text-muted">Mostly sunny</p>
                   </div>
                 </div>
               </div>
@@ -170,11 +170,11 @@ export default function AttractionDetailLayout({
         <section
           id="things-to-do"
           ref={setRef('things-to-do')}
-          className="scroll-mt-28 border-b border-white/10 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 border-b border-border-light py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-6 text-xl font-semibold text-white sm:text-2xl">Things to do</h2>
-            <p className="max-w-2xl text-[15px] leading-[1.8] text-white/80 sm:text-base">
+            <h2 className="mb-6 text-xl font-semibold text-charcoal sm:text-2xl">Things to do</h2>
+            <p className="max-w-2xl text-[15px] leading-[1.8] text-muted sm:text-base">
               Explore scenic routes, photo spots, local culture and activities along this stage of the Grand Tour.
               From driving and hiking to village visits and regional cuisine, there’s something for every traveller.
             </p>
@@ -185,13 +185,13 @@ export default function AttractionDetailLayout({
         <section
           id="highlights"
           ref={setRef('highlights')}
-          className="scroll-mt-28 border-b border-white/10 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 border-b border-border-light bg-bg-soft py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-8 text-xl font-semibold text-white sm:text-2xl">Highlights</h2>
+            <h2 className="mb-8 text-xl font-semibold text-charcoal sm:text-2xl">Highlights</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {HIGHLIGHT_CARDS.map((card) => (
-                <article key={card.title} className="group overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-colors hover:border-white/20">
+                <article key={card.title} className="group overflow-hidden rounded-xl border border-border-light bg-bg-main transition-colors hover:border-border-light hover:shadow-md">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src={card.image}
@@ -203,7 +203,7 @@ export default function AttractionDetailLayout({
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-4">
                       <h3 className="font-semibold text-white">{card.title}</h3>
-                      <p className="text-xs text-white/80">{card.subtitle}</p>
+                      <p className="text-xs text-white/90">{card.subtitle}</p>
                     </div>
                   </div>
                 </article>
@@ -216,21 +216,21 @@ export default function AttractionDetailLayout({
         <section
           id="at-a-glance"
           ref={setRef('at-a-glance')}
-          className="scroll-mt-28 border-b border-white/10 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 border-b border-border-light py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-10 text-xl font-semibold text-white sm:text-2xl">{title} at a glance</h2>
+            <h2 className="mb-10 text-xl font-semibold text-charcoal sm:text-2xl">{title} at a glance</h2>
             <div className="grid gap-12 lg:grid-cols-[1fr,minmax(280px,360px)] lg:gap-16">
               <div className="space-y-8">
                 {AT_A_GLANCE_BLOCKS.map((block) => (
                   <div key={block.heading}>
-                    <h3 className="mb-2 text-base font-semibold text-white">{block.heading}</h3>
-                    <p className="text-[15px] leading-[1.8] text-white/80">
+                    <h3 className="mb-2 text-base font-semibold text-charcoal">{block.heading}</h3>
+                    <p className="text-[15px] leading-[1.8] text-muted">
                       {block.body}
                       {block.heading === 'Experience for less' && (
                         <>
                           {' '}
-                          <a href="https://www.myswitzerland.com" target="_blank" rel="noreferrer noopener" className="text-red-400 hover:text-red-300 underline underline-offset-2">
+                          <a href="https://www.myswitzerland.com" target="_blank" rel="noreferrer noopener" className="text-accent-red hover:underline underline-offset-2">
                             MySwitzerland
                           </a>
                           {' '}
@@ -242,7 +242,7 @@ export default function AttractionDetailLayout({
                 ))}
               </div>
               <div className="space-y-6">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border-light bg-bg-soft">
                   <Image
                     src={imageSrc}
                     alt={`${title} region`}
@@ -251,9 +251,9 @@ export default function AttractionDetailLayout({
                     className="object-cover"
                   />
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-center">
-                  <p className="text-sm font-semibold uppercase tracking-wider text-white/90">Grand Tour</p>
-                  <p className="mt-1 text-xs text-white/60">of Switzerland</p>
+                <div className="rounded-xl border border-border-light bg-bg-soft p-4 text-center">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-charcoal">Grand Tour</p>
+                  <p className="mt-1 text-xs text-muted">of Switzerland</p>
                 </div>
               </div>
             </div>
@@ -264,22 +264,22 @@ export default function AttractionDetailLayout({
         <section
           id="impressions"
           ref={setRef('impressions')}
-          className="scroll-mt-28 border-b border-white/10 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 border-b border-border-light bg-bg-soft py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-6 text-xl font-semibold text-white sm:text-2xl">Impressions</h2>
-            <div className="mb-6 flex gap-6 border-b border-white/10 pb-2">
+            <h2 className="mb-6 text-xl font-semibold text-charcoal sm:text-2xl">Impressions</h2>
+            <div className="mb-6 flex gap-6 border-b border-border-light pb-2">
               <button
                 type="button"
                 onClick={() => setImpressionsFilter('image')}
-                className={`text-sm font-medium transition-colors ${impressionsFilter === 'image' ? 'text-white border-b-2 border-red-500 pb-0.5 -mb-0.5' : 'text-white/60 hover:text-white/80'}`}
+                className={`text-sm font-medium transition-colors ${impressionsFilter === 'image' ? 'text-charcoal border-b-2 border-accent-red pb-0.5 -mb-0.5' : 'text-muted hover:text-charcoal'}`}
               >
                 Image
               </button>
               <button
                 type="button"
                 onClick={() => setImpressionsFilter('video')}
-                className={`text-sm font-medium transition-colors ${impressionsFilter === 'video' ? 'text-white border-b-2 border-red-500 pb-0.5 -mb-0.5' : 'text-white/60 hover:text-white/80'}`}
+                className={`text-sm font-medium transition-colors ${impressionsFilter === 'video' ? 'text-charcoal border-b-2 border-accent-red pb-0.5 -mb-0.5' : 'text-muted hover:text-charcoal'}`}
               >
                 Video
               </button>
@@ -302,8 +302,8 @@ export default function AttractionDetailLayout({
                 ))}
               </div>
             ) : (
-              <div className="flex aspect-video items-center justify-center rounded-2xl border border-white/10 bg-white/5">
-                <p className="text-white/50">Video content coming soon</p>
+              <div className="flex aspect-video items-center justify-center rounded-2xl border border-border-light bg-bg-soft">
+                <p className="text-muted">Video content coming soon</p>
               </div>
             )}
           </div>
@@ -313,19 +313,19 @@ export default function AttractionDetailLayout({
         <section
           id="events"
           ref={setRef('events')}
-          className="scroll-mt-28 py-12 sm:py-16 md:py-20"
+          className="scroll-mt-28 bg-bg-soft py-12 sm:py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-8 text-xl font-semibold text-white sm:text-2xl">Top Events</h2>
+            <h2 className="mb-8 text-xl font-semibold text-charcoal sm:text-2xl">Top Events</h2>
             <div className="grid gap-4 sm:grid-cols-3">
               {TOP_EVENTS.map((event) => (
                 <article
                   key={event.title}
-                  className="rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-white/20"
+                  className="rounded-xl border border-border-light bg-bg-main p-5 transition-colors hover:border-border-light hover:shadow-md"
                 >
-                  <p className="text-xs font-medium uppercase tracking-wider text-red-400/90">{event.type}</p>
-                  <h3 className="mt-2 font-semibold text-white">{event.title}</h3>
-                  <p className="mt-1 text-sm text-white/60">{event.date}</p>
+                  <p className="text-xs font-medium uppercase tracking-wider text-accent-red">{event.type}</p>
+                  <h3 className="mt-2 font-semibold text-charcoal">{event.title}</h3>
+                  <p className="mt-1 text-sm text-muted">{event.date}</p>
                 </article>
               ))}
             </div>
@@ -333,9 +333,9 @@ export default function AttractionDetailLayout({
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-[#12090b] py-8">
+      <footer className="border-t border-border-light bg-bg-soft py-8">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-medium uppercase tracking-widest text-white/40">Grand Tour of Switzerland</p>
+          <p className="text-xs font-medium uppercase tracking-widest text-muted">Grand Tour of Switzerland</p>
         </div>
       </footer>
     </div>

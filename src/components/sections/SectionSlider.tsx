@@ -27,7 +27,7 @@ export function SectionSlider({
   return (
     <section
       className={cn(
-        'bg-[#221115] py-12 md:py-16 text-white',
+        'bg-bg-soft py-12 md:py-16 text-charcoal border-t border-border-light',
         className
       )}
     >
@@ -41,7 +41,7 @@ export function SectionSlider({
             {learnMoreHref && (
               <Link
                 href={learnMoreHref}
-                className="inline-flex items-center gap-1 mt-2 text-[#e3000f] font-medium hover:underline focus:outline-none focus:underline"
+                className="inline-flex items-center gap-1 mt-2 text-accent-red font-medium hover:underline focus:outline-none focus:underline"
               >
                 {learnMoreLabel}
                 <ArrowRight className="w-4 h-4" aria-hidden />
@@ -54,7 +54,7 @@ export function SectionSlider({
             <button
               type="button"
               onClick={() => scroll('prev')}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+              className="flex h-10 w-10 items-center justify-center bg-[#d91f26] rounded-full border border-white/40 text-white  focus:outline-none focus:ring-2 focus:ring-white/50"
               aria-label="Previous"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -62,7 +62,7 @@ export function SectionSlider({
             <button
               type="button"
               onClick={() => scroll('next')}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+              className="flex h-10 w-10 items-center justify-center bg-[#d91f26] rounded-full border border-white/40 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
               aria-label="Next"
             >
               <ChevronRight className="w-5 h-5" />

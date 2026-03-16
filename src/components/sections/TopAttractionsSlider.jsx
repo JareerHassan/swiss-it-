@@ -47,8 +47,8 @@ export default function TopAttractionsSlider() {
   if (!current) return null;
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center bg-[#221115] p-2 sm:p-4 md:p-10">
-      <div className="relative w-full max-w-9xl h-[70vh] min-h-[500px] md:h-auto md:aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl">
+    <section className="relative w-full min-h-screen flex items-center justify-center bg-bg-soft p-2 sm:p-4 md:p-10">
+      <div className="relative w-full max-w-9xl h-[70vh] min-h-[500px] md:h-auto md:aspect-[16/9] overflow-hidden rounded-2xl ">
         
         {/* Background Image */}
         <div className={`absolute inset-0 transition-opacity duration-700 ${isExiting ? 'opacity-40' : 'opacity-100'}`}>
@@ -81,7 +81,7 @@ export default function TopAttractionsSlider() {
               href={detailHref}
               className="group inline-flex items-center transition-transform hover:translate-x-2"
             >
-              <MoveRight className="text-red-500 w-6 h-6 sm:w-8 sm:h-8 stroke-[1.5px]" />
+              <MoveRight className="text-accent-red w-6 h-6 sm:w-8 sm:h-8 stroke-[1.5px]" />
             </Link>
           </div>
         </div>
@@ -90,14 +90,14 @@ export default function TopAttractionsSlider() {
         <div className="absolute bottom-4 right-4 flex gap-0.5 z-30 md:bottom-0 md:right-0">
           <button
             onClick={handlePrev}
-            className="flex items-center justify-center bg-[#1a0a0d]/80 hover:bg-[#2a1a1d] text-white w-12 h-12 md:w-16 md:h-16 transition-colors border border-white/10 md:border-t md:border-l rounded-l-xl md:rounded-none group"
+            className="flex items-center justify-center bg-black/60 hover:bg-black/80 text-white w-12 h-12 md:w-16 md:h-16 transition-colors border border-white/20 md:border-t md:border-l rounded-l-xl md:rounded-none group"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 opacity-60 group-hover:opacity-100 transition-opacity" />
           </button>
           <button
             onClick={handleNext}
-            className="flex items-center justify-center bg-[#1a0a0d]/80 hover:bg-[#2a1a1d] text-white w-12 h-12 md:w-16 md:h-16 transition-colors border border-white/10 md:border-t md:border-l rounded-r-xl md:rounded-none group"
+            className="flex items-center justify-center bg-black/60 hover:bg-black/80 text-white w-12 h-12 md:w-16 md:h-16 transition-colors border border-white/20 md:border-t md:border-l rounded-r-xl md:rounded-none group"
             aria-label="Next slide"
           >
             <ChevronRight className="w-5 h-5 md:w-6 md:h-6 opacity-60 group-hover:opacity-100 transition-opacity" />

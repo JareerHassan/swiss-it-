@@ -78,7 +78,7 @@ export default function Home() {
 
       {/* Floating Assistant Button */}
       <div className="fixed right-0 top-1/2 z-50 -translate-y-1/2">
-        <button className="group flex items-center gap-3 bg-[#e3000f] text-white px-4 py-5 rounded-l-xl shadow-2xl hover:bg-red-700 transition-all duration-300 hover:pr-8">
+        <button className="group flex items-center gap-3 bg-accent-red text-white px-4 py-5 rounded-l-xl shadow-lg hover:opacity-90 transition-all duration-300 hover:pr-8">
           <span
             className="text-lg font-medium [writing-mode:vertical-rl] rotate-180 tracking-wider"
             style={{ writingMode: "vertical-rl" }}
