@@ -92,7 +92,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
         {/* Bottom Bar */}
         <div className="border-t border-border-light pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-sm text-muted font-medium">
-            © {new Date().getFullYear()} Highland Group
+            © {new Date().getFullYear()} Highland Group GmbH
           </div>
         </div>
       </div>
