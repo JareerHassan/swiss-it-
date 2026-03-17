@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { ArrowRight } from "lucide-react";
 import { blogPosts } from "@/data/blog-posts";
+import { Link } from "@/i18n/routing";
 
 export default function BlogPage() {
   const breadcrumbItems = [
@@ -43,7 +44,7 @@ export default function BlogPage() {
                 <span>{featuredPost.readingTime}</span>
               </div>
 
-              <a href={featuredPost.slug} className="group/featured block space-y-4">
+            <Link href={`/blog/${featuredPost.slug}`} className="group/featured block space-y-4">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal leading-tight group-hover:text-accent-red transition-colors">
                   {featuredPost.title}
                 </h2>
@@ -56,7 +57,7 @@ export default function BlogPage() {
                   Read full article
                   <ArrowRight className="h-5 w-5" />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -98,7 +99,7 @@ export default function BlogPage() {
                     <span>{post.readingTime}</span>
                   </div>
 
-                  <a href={post.slug} className="group/link block">
+                  <Link href={`/blog/${post.slug}`} className="group/link block">
                     <h3 className="text-xl md:text-2xl font-bold text-charcoal mb-3 group-hover:text-accent-red transition-colors">
                       {post.title}
                     </h3>
@@ -113,7 +114,7 @@ export default function BlogPage() {
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

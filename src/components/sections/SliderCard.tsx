@@ -23,8 +23,7 @@ export function SliderCard({ item, className }: SliderCardProps) {
           sizes="(max-width: 768px) 85vw, 380px"
           className="object-cover rounded-xl transition-opacity duration-300 group-hover:brightness-110"
         />
-        <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/70 via-transparent to-transparent transition-opacity duration-300 group-hover:from-black/80" />
-      </div>
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-all duration-300 group-hover:from-black/95 group-hover:via-black/60" />      </div>
 
       <div className="absolute bottom-4 left-5 right-5 text-start text-white">
         <span className="block text-xl font-semibold drop-shadow-md transition-all duration-300 group-hover:translate-x-1.5">

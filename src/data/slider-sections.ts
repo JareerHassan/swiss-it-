@@ -11,16 +11,16 @@ export const topDestinations: SliderCardItem[] = [
       'Modern, multilingual websites built for Swiss businesses to improve digital presence and conversions.',
     href: '/services/website-development',
   },
-  {
-    id: 'hotel-booking-systems',
-    imageSrc: '/assets/img-14.png',
-    imageAlt: 'Hotel booking system and hospitality technology',
-    label: 'Hotel Direct Booking Solutions',
+    {
+    id: 'digital-marketing',
+    imageSrc: '/assets/img-16.png',
+    imageAlt: 'Digital marketing analytics and growth strategy',
+    label: 'Digital Marketing',
     description:
-      'Booking-focused websites helping Swiss hotels increase direct reservations and reduce OTA commissions.',
-    href: '/services/hotel-booking-systems',
+      'SEO, Google Ads, and performance campaigns to attract qualified customers.',
+    href: '/services/digital-marketing',
   },
-  {
+   {
     id: 'mobile-app-development',
     imageSrc: '/assets/img-15.png',
     imageAlt: 'Mobile app development for business growth',
@@ -30,14 +30,16 @@ export const topDestinations: SliderCardItem[] = [
     href: '/services/mobile-app-development',
   },
   {
-    id: 'digital-marketing',
-    imageSrc: '/assets/img-16.png',
-    imageAlt: 'Digital marketing analytics and growth strategy',
-    label: 'Digital Marketing',
+    id: 'hotel-booking-systems',
+    imageSrc: '/assets/img-14.png',
+    imageAlt: 'Hotel booking system and hospitality technology',
+    label: 'Hotel Direct Booking Solutions',
     description:
-      'SEO, Google Ads, and performance campaigns to attract qualified customers.',
-    href: '/services/digital-marketing',
+      'Booking-focused websites helping Swiss hotels increase direct reservations and reduce OTA commissions.',
+    href: '/services/hotel-booking-systems',
   },
+ 
+
   {
     id: 'ai-automation',
     imageSrc: '/assets/img-17.jpeg',

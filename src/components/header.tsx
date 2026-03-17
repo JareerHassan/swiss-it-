@@ -59,7 +59,8 @@ const Header = () => {
           </nav>
 
           {/* Right Utilities */}
-          <HeaderUtilities />
+        {/* Right Utilities */}
+<HeaderUtilities isSolid={isSolid} />
 
           {/* Mobile Menu Trigger */}
           <div className="lg:hidden">

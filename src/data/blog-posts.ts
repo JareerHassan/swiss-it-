@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     summary:
       "A simple framework we use with teams to move from assumptions to validated concepts.",
     image:
-      "https://images.unsplash.com/photo-1555066931-bf19c0fd1085?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D",
     featured: false,
     content: [
       "Many teams jump straight from idea to backlog. A short, well-structured discovery sprint reduces risk by testing the riskiest assumptions before significant build work begins.",

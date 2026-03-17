@@ -49,7 +49,7 @@ export default function Home() {
       <section className="relative z-10">
         <SectionSlider
           title="Core Services"
-          learnMoreHref="/destinations"
+          learnMoreHref="/services"
           learnMoreLabel="Learn more"
         >
           {topDestinations.map((item) => (

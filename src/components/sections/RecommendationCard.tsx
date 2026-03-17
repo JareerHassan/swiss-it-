@@ -21,8 +21,7 @@ export function RecommendationCard({ item, className }: RecommendationCardProps)
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-400 group-hover:scale-105"
         />
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/75 via-black/20 to-transparent transition-all duration-300 group-hover:from-black/85" />
-      </div>
+<div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-all duration-300 group-hover:from-black/95 group-hover:via-black/60" />      </div>
 
       <div className="absolute bottom-5 left-5 right-5 text-white">
         <span className="block text-xl md:text-2xl font-semibold drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)] transition-all duration-300 group-hover:-translate-y-1.5 group-hover:scale-[1.02]">
