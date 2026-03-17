@@ -40,7 +40,7 @@ export const recommendationWinter: RecommendationGridItem[] = [
   },
   {
     id: 'better-conversion',
-    imageSrc: '/assets/img-11.jpg',
+    imageSrc: '/assets/img-19.png',
     imageAlt: 'Better customer experience and higher conversions',
     label: 'Generate More Qualified Leads',
     description:
@@ -55,32 +55,32 @@ export const recommendationSummer: RecommendationGridItem[] = [
   {
     id: 'ai-automation-case',
     imageSrc:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1280&q=80',
+      '/assets/img-17.png',
     imageAlt: 'Website development and digital design workspace',
     label: 'Faster Responses Through AI Automation',
     description:
       'AI chatbots and automation that help hospitality businesses respond faster to customer inquiries.',
-    href: '/services/website-development',
+    href: '/services/ai-automation-case',
     colSpan2: true,
   },
   {
     id: 'hotel-booking-case',
     imageSrc:
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1280&q=80',
+      '/assets/img-15.png',
     imageAlt: 'Mobile app development for business growth',
     label: 'Boosting Direct Bookings and Hotel Profitability',
     description:
       'Modern booking websites designed to increase direct reservations and reduce commissions.',
-    href: '/services/mobile-app-development',
+    href: '/services/hotel-booking-case',
   },
   {
     id: 'lead-engine-case',
     imageSrc:
-      'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1280&q=80',
+      '/assets/img-18.jpeg',
     imageAlt: 'Digital marketing strategy and analytics',
     label: 'Turning an Outdated Website into a Lead Engine',
     description:
       'A high-converting website and SEO improvements that significantly increased inquiries.',
-    href: '/services/digital-marketing',
+    href: '/services/lead-engine-case',
   },
 ]

@@ -29,6 +29,15 @@ export const topDestinations: SliderCardItem[] = [
       'Custom mobile apps for bookings, customer engagement, and business operations.',
     href: '/services/mobile-app-development',
   },
+    {
+    id: 'ai-automation',
+    imageSrc: '/assets/img-17.jpeg',
+    imageAlt: 'AI automation and smart business systems',
+    label: 'AI & Business Automation',
+    description:
+      'Chatbots, WhatsApp assistants, and workflow automation to save time.',
+    href: '/services/ai-automation',
+  },
   {
     id: 'hotel-booking-systems',
     imageSrc: '/assets/img-14.png',
@@ -40,15 +49,7 @@ export const topDestinations: SliderCardItem[] = [
   },
  
 
-  {
-    id: 'ai-automation',
-    imageSrc: '/assets/img-17.jpeg',
-    imageAlt: 'AI automation and smart business systems',
-    label: 'AI & Business Automation',
-    description:
-      'Chatbots, WhatsApp assistants, and workflow automation to save time.',
-    href: '/services/ai-automation',
-  },
+
 ];
 
 /** Business Growth Highlights */

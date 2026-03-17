@@ -1,38 +1,35 @@
-// JS data for the featured slider section.
-// Content updated for Highland Group business services and value propositions.
-
 export const topAttractionsSlides = [
   {
     id: 'website-development',
     category: 'Core Services',
-    title: 'Website Development',
+    title: 'High-Converting Websites',
     description:
-      'Modern, fast, and conversion-focused websites built for businesses that want stronger credibility, better performance, and more leads online.',
+      'We build modern, fast, and conversion-focused websites that turn visitors into customers and strengthen your business online.',
     imageSrc:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1280&q=80',
+      '/assets/img-13.png',
     imageAlt: 'Website development workspace with laptop and code',
     href: '/services/website-development',
   },
   {
     id: 'ai-automation',
     category: 'Core Services',
-    title: 'AI Automation',
+    title: 'AI & Business Automation',
     description:
-      'Save time, reduce manual work, and improve customer response speed with smart automation tools, AI assistants, and workflow systems.',
+      'Automate repetitive tasks, respond faster to customers, and improve efficiency with AI-powered tools and smart workflows.',
     imageSrc:
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1280&q=80',
+      '/assets/img-17.jpeg',
     imageAlt: 'AI automation and smart business systems',
     href: '/services/ai-automation',
   },
-  {
-    id: 'digital-growth',
-    category: 'Business Growth',
-    title: 'Digital Growth Solutions',
-    description:
-      'From websites and mobile apps to marketing and CRM systems, Highland Group helps European businesses increase revenue, improve efficiency, and grow with confidence.',
-    imageSrc:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1280&q=80',
-    imageAlt: 'Business growth analytics dashboard on screen',
-    href: '/solutions/digital-growth',
-  },
+ {
+  id: 'mobile-app-development',
+  category: 'Core Services',
+  title: 'Mobile App Development',
+  description:
+    'Custom mobile apps designed to improve customer experience, streamline operations, and support business growth.',
+  imageSrc:
+    '/assets/img-15.png',
+  imageAlt: 'Mobile app development and smartphone interface design',
+  href: '/services/mobile-app-development',
+},
 ];

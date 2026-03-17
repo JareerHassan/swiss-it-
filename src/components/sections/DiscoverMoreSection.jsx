@@ -13,7 +13,7 @@ export default function DiscoverMoreSection() {
             <div className="relative z-10 w-[260px] overflow-hidden rounded-[36px] border border-border-light bg-bg-main shadow-lg md:w-[280px]">
               <div className="relative h-[360px] w-full bg-border-light">
                 <Image
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                  src="/assets/img-13.png"
                   alt="Website development and digital business solutions"
                   fill
                   className="object-cover"
@@ -65,7 +65,7 @@ export default function DiscoverMoreSection() {
             <div className="relative z-10 w-[260px] overflow-hidden rounded-[36px] border border-border-light bg-bg-main shadow-lg md:w-[280px]">
               <div className="relative h-[360px] w-full bg-border-light">
                 <Image
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+                  src="/assets/img-17.jpeg"
                   alt="AI automation and smart workflow systems"
                   fill
                   className="object-cover"
@@ -120,7 +120,7 @@ export default function DiscoverMoreSection() {
             {/* Main Image Container */}
             <div className="relative h-[450px] w-full overflow-hidden rounded-tl-[80px] rounded-br-[80px]">
               <Image
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+                src="/assets/img-7.jpg"
                 alt="Business growth dashboard and analytics"
                 fill
                 className="object-cover"

@@ -15,9 +15,9 @@ export default function Contact() {
       <div className="bg-gradient-to-b from-bg-soft/50 to-transparent">
         <Breadcrumb
           items={breadcrumbItems}
-          title="Let's Build Together"
-          subtitle="Whether you have a fully-formed brief or just the spark of an idea, reach out."
-          description="We help brands navigate the digital landscape with precision."
+          title="Let's Build Digital Futures"
+          subtitle="Have an idea, a project brief, or just exploring possibilities? Reach out."
+          description="Highland Group helps businesses navigate digital transformation with precision, strategy, and scalable solutions."
         />
       </div>
 
@@ -28,16 +28,16 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-12 order-2 lg:order-1">
             <div className="relative z-10 space-y-8 text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-bg-main text-accent-red text-sm font-medium mb-2">
-                <Sparkles className="w-4 h-4" /> Available for new projects
+                <Sparkles className="w-4 h-4" /> Available for new collaborations
               </div>
 
               <h2 className="text-4xl md:text-6xl font-semibold text-charcoal">
                 Let’s build <br />
-                <span className="text-accent-red">your dream.</span>
+                <span className="text-accent-red">your next project.</span>
               </h2>
 
               <p className="text-md text-muted max-w-md leading-relaxed">
-                Got an idea? A dream project? Or just want to chat? Drop me a message and I'll get back to you within 24 hours.
+                Have a concept, a fully-formed brief, or a challenge to solve? Contact Highland Group and we’ll help you strategize, design, and implement impactful digital solutions.
               </p>
             </div>
 
@@ -77,6 +77,7 @@ export default function Contact() {
                       type="text"
                       className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted"
                       placeholder="Doe"
+                      required
                     />
                   </div>
                 </div>
@@ -86,7 +87,7 @@ export default function Contact() {
                   <input
                     type="email"
                     className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted"
-                    placeholder="hello@example.com"
+                    placeholder="hello@highlandgroup.com"
                     required
                   />
                 </div>
@@ -96,7 +97,7 @@ export default function Contact() {
                   <textarea
                     rows={5}
                     className="w-full px-6 py-4 bg-bg-soft border border-transparent rounded-2xl focus:bg-bg-main focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all placeholder:text-muted resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell us about your project..."
                     required
                   />
                 </div>
@@ -114,6 +115,8 @@ export default function Contact() {
 
         </div>
       </section>
+
+      {/* Contact Info Cards */}
       <section className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-20">
         <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:shadow-xl transition-all">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 rounded-xl text-accent-red">
@@ -121,27 +124,27 @@ export default function Contact() {
           </div>
           <div>
             <p className="text-xs text-charcoal font-bold uppercase tracking-wider">Location</p>
-            <p className="text-sm font-medium text-muted">Washington DC, 20002</p>
+            <p className="text-sm font-medium text-muted">Berlin, Germany</p>
           </div>
         </div>
 
-        <a href="mailto:info@red@gmail.com" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
+        <a href="mailto:info@highlandgroup.com" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl group-hover/link:scale-110 transition-transform">
             <Mail className="w-7 h-7" />
           </div>
           <div>
-            <p className="text-xs text-accent-red font-bold uppercase tracking-wider">Email Me</p>
-            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">info@red@gmail.com</p>
+            <p className="text-xs text-accent-red font-bold uppercase tracking-wider">Email Us</p>
+            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">info@highlandgroup.com</p>
           </div>
         </a>
 
-        <a href="tel:+1234567890" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
+        <a href="tel:+491234567890" className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light hover:border-accent-red hover:shadow-xl transition-all group/link">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl group-hover/link:scale-110 transition-transform">
             <Phone className="w-7 h-7" />
           </div>
           <div>
             <p className="text-xs text-accent-red font-bold uppercase tracking-wider">Call Us</p>
-            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">+1 234 567 890</p>
+            <p className="text-sm font-medium group-hover/link:text-accent-red transition-colors">+49 123 456 7890</p>
           </div>
         </a>
       </section>

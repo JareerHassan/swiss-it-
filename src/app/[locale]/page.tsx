@@ -5,7 +5,7 @@ import { SectionSlider, SliderCard, RecommendationGrid, DiscoverMoreSection } fr
 import TopAttractionsSlider from "@/components/sections/TopAttractionsSlider";
 import { topDestinations } from "@/data/slider-sections";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl mb-4 md:mb-6 drop-shadow-lg max-w-5xl">
           Smart Digital Solutions for Swiss Businesses
           </h1>
-        
+        <Link href="/services">
           <Button
             variant="outline"
             size="lg"
@@ -42,6 +42,7 @@ export default function Home() {
           >
             Start Exploring
           </Button>
+          </Link>
         </div>
       </div>
 

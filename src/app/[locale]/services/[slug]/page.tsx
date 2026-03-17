@@ -23,7 +23,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-bg-main text-charcoal selection:bg-accent-red/20 selection:text-charcoal">
+    <main className="min-h-screen bg-bg-soft text-charcoal selection:bg-accent-red/20 selection:text-charcoal">
       <Breadcrumb
         items={breadcrumbItems}
         title={item.title}

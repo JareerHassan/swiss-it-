@@ -24,7 +24,7 @@ export default function TopAttractionsSlider() {
   const current = topAttractionsSlides[index];
 
   const detailHref =
-    current && locale ? `/${locale}/experiences/${current.id}` : '#';
+    current && locale ? `/${locale}/services/${current.id}` : '#';
 
   const handleNext = useCallback(() => {
     if (isExiting) return;

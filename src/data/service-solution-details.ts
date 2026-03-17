@@ -111,119 +111,123 @@ export const detailItems: DetailItem[] = [
 },
 
   // Value Offerings (homepage "Value Offerings" section)
+ {
+  slug: 'increase-revenue',
+  basePath: 'solutions',
+  type: 'value-offering',
+  title: 'Increase Revenue by Up to 25%',
+  summary:
+    'We help businesses grow revenue by improving conversions, increasing customer value, and optimizing the full customer journey.',
+  image: '/assets/img-7.jpg',
+  content: [
+    'Most businesses do not have a traffic problem — they have a conversion problem. We focus on turning your existing visitors into paying customers.',
+    'By improving your website structure, offers, and user experience, we make it easier for customers to take action. Small improvements in conversion rates can lead to significant revenue growth.',
+    'We also optimize pricing presentation, upsells, and repeat customer strategies to increase average order value and long-term customer value.',
+  ],
+},
+{
+  slug: 'reduce-costs',
+  basePath: 'solutions',
+  type: 'value-offering',
+  title: 'Reduce OTA and Third-Party Dependence',
+  summary:
+    'Take control of your bookings and reduce commission costs by strengthening your direct channels.',
+  image: '/assets/img-8.jpg',
+  content: [
+    'Many businesses rely heavily on third-party platforms that take a significant percentage of every transaction. Over time, this reduces profitability.',
+    'We help you build strong direct channels through your own website, marketing, and booking systems, so you keep more of your revenue.',
+    'The goal is not to remove platforms completely, but to create a balanced strategy where your business is no longer dependent on them.',
+  ],
+},
+{
+  slug: 'save-time',
+  basePath: 'solutions',
+  type: 'value-offering',
+  title: 'Reduce Manual Work by Up to 40%',
+  summary:
+    'Automate repetitive tasks and streamline operations so your team can focus on high-value work.',
+  image: '/assets/img-9.jpg',
+  content: [
+    'Teams often spend hours on repetitive tasks like responding to inquiries, managing bookings, or updating systems manually.',
+    'We introduce automation that handles these tasks efficiently — from instant replies to workflow automation and system integrations.',
+    'This reduces workload, minimizes errors, and allows your team to focus on growth, customer experience, and higher-impact activities.',
+  ],
+},
+ {
+  slug: 'more-leads',
+  basePath: 'solutions',
+  type: 'value-offering',
+  title: 'Improve Customer Response Time by Up to 60%',
+  summary:
+    'Respond faster to inquiries and convert more leads into customers with smart communication systems.',
+  image: '/assets/img-10.jpeg',
+  content: [
+    'Speed is critical when it comes to converting leads. The faster you respond, the higher your chances of closing the customer.',
+    'We implement systems that ensure every inquiry is handled instantly or within minutes, not hours.',
+    'With automation and better workflows, you never miss opportunities, and customers experience faster, more reliable communication.',
+  ],
+},
   {
-    slug: 'increase-revenue',
-    basePath: 'solutions',
-    type: 'value-offering',
-    title: 'Increase Revenue by Up to 25%',
-    summary:
-      'A structured approach to improving conversion rates, average order value and customer lifetime value.',
-    image: '/assets/img-7.jpg',
-    content: [
-      'Revenue growth rarely comes from a single big change. We look at the entire journey – from first impression to repeat business – and identify small, compounding improvements.',
-      'Typical levers include better landing pages, clearer offers, improved pricing presentation and smarter remarketing.',
-      'We work with your team to prioritise experiments, measure impact and keep what works.',
-    ],
-  },
-  {
-    slug: 'reduce-costs',
-    basePath: 'solutions',
-    type: 'value-offering',
-    title: 'Reduce OTA and Third-Party Dependence',
-    summary:
-      'Strengthen your direct channels so you rely less on intermediaries and keep more of each booking.',
-    image: '/assets/img-8.jpg',
-    content: [
-      'Our goal is not to eliminate OTAs, but to rebalance your mix. We do this by improving direct discovery, simplifying booking flows and giving guests a clear reason to book direct.',
-      'We also look at your internal processes to remove unnecessary manual steps that add hidden costs.',
-    ],
-  },
-  {
-    slug: 'save-time',
-    basePath: 'solutions',
-    type: 'value-offering',
-    title: 'Reduce Manual Work by Up to 40%',
-    summary:
-      'Automation and system design that remove repetitive tasks from your team’s day-to-day workload.',
-    image: '/assets/img-9.jpg',
-    content: [
-      'We start with a simple mapping of where your team spends time today. From there, we propose targeted automations that pay off quickly.',
-      'Examples include automated responses, smarter routing of enquiries, and better integrations between tools you already use.',
-    ],
-  },
-  {
-    slug: 'more-leads',
-    basePath: 'solutions',
-    type: 'value-offering',
-    title: 'Improve Customer Response Time by Up to 60%',
-    summary:
-      'Faster, more consistent responses that turn more enquiries into confirmed bookings or sales.',
-    image: '/assets/img-10.jpeg',
-    content: [
-      'Slow or inconsistent responses cause high-intent leads to drop away. We help you design simple flows that ensure every enquiry is acknowledged and followed up quickly.',
-      'Where appropriate, we introduce automation to handle common questions so your team can focus on the conversations that matter most.',
-    ],
-  },
-  {
-    slug: 'better-conversion',
-    basePath: 'solutions',
-    type: 'value-offering',
-    title: 'Generate More Qualified Leads',
-    summary:
-      'Positioning, content and forms that attract the right people and filter out noise.',
-    image: '/assets/img-11.jpg',
-    content: [
-      'We refine your messaging and on-site content so the people who arrive understand quickly whether you are a good fit.',
-      'Through clear calls to action and well-designed enquiry flows, we help you collect the context you need to respond effectively.',
-    ],
-  },
+  slug: 'better-conversion',
+  basePath: 'solutions',
+  type: 'value-offering',
+  title: 'Generate More Qualified Leads',
+  summary:
+    'Attract the right customers and filter out low-quality inquiries with better positioning and messaging.',
+  image: '/assets/img-19.png',
+  content: [
+    'Not all leads are valuable. We help you attract the right audience — people who are more likely to convert into paying customers.',
+    'Through clear messaging, better targeting, and optimized landing pages, we ensure your business speaks directly to the right customers.',
+    'This results in higher-quality inquiries, better conversion rates, and less time wasted on unqualified leads.',
+  ],
+},
 
   // Case Studies (homepage "Case Studies" section)
-  {
-    slug: 'ai-automation-case',
-    basePath: 'services',
-    type: 'case-study',
-    title: 'Faster Responses Through AI Automation',
-    summary:
-      'How a hospitality business reduced response times and increased booking enquiries with a practical AI assistant.',
-    image:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1280&q=80',
-    content: [
-      'A mid-sized hospitality group was struggling to respond quickly to enquiries across email, chat and messaging apps.',
-      'We implemented an AI assistant that could answer common questions, propose suitable offers and hand over to human staff when needed.',
-      'Within weeks, response times improved significantly and the team had more time to focus on high-value guests.',
-    ],
-  },
-  {
-    slug: 'hotel-booking-case',
-    basePath: 'services',
-    type: 'case-study',
-    title: 'Boosting Direct Bookings and Hotel Profitability',
-    summary:
-      'A direct booking experience that helped a hotel shift more reservations away from OTAs.',
-    image:
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1280&q=80',
-    content: [
-      'A hotel client wanted to depend less on online travel agencies and build stronger direct relationships with guests.',
-      'We redesigned their website around clear offers, transparent pricing and a frictionless booking flow integrated with their existing systems.',
-      'Over time, the share of direct bookings increased, improving margins without sacrificing occupancy.',
-    ],
-  },
-  {
-    slug: 'lead-engine-case',
-    basePath: 'services',
-    type: 'case-study',
-    title: 'Turning an Outdated Website into a Lead Engine',
-    summary:
-      'A modernised site and SEO improvements that led to a significant increase in qualified enquiries.',
-    image:
-      'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1280&q=80',
-    content: [
-      'An established services business was relying on referrals and an outdated website that no longer reflected their capabilities.',
-      'We worked with their team to refresh the brand, clarify positioning and rebuild the site around concrete outcomes.',
-      'Combined with targeted SEO improvements, this led to a steady increase in high-quality inbound leads.',
-    ],
-  },
+ {
+  slug: 'ai-automation-case',
+  basePath: 'services',
+  type: 'case-study',
+  title: 'Faster Responses Through AI Automation',
+  summary:
+    'How automation reduced response times and increased customer engagement for a hospitality business.',
+  image:
+ '/assets/img-17.png',
+   content: [
+    'A hospitality business was struggling to manage customer inquiries across multiple channels, leading to slow responses and missed opportunities.',
+    'We implemented an AI-powered assistant that handled common questions instantly and routed complex inquiries to the right team members.',
+    'As a result, response times improved significantly, customer satisfaction increased, and the business captured more booking opportunities.',
+  ],
+},
+ {
+  slug: 'hotel-booking-case',
+  basePath: 'services',
+  type: 'case-study',
+  title: 'Boosting Direct Bookings and Hotel Profitability',
+  summary:
+    'A redesigned booking experience that helped a hotel increase direct reservations and reduce commission costs.',
+  image:
+     '/assets/img-15.png',
+  content: [
+    'The client relied heavily on OTAs, losing a significant portion of revenue through commissions.',
+    'We redesigned their website with a focus on direct bookings, improving user experience and simplifying the booking process.',
+    'The result was a steady increase in direct reservations, allowing the hotel to retain more revenue and improve overall profitability.',
+  ],
+},
+ {
+  slug: 'lead-engine-case',
+  basePath: 'services',
+  type: 'case-study',
+  title: 'Turning an Outdated Website into a Lead Engine',
+  summary:
+    'A complete website transformation that increased qualified inquiries and business growth.',
+  image:
+    '/assets/img-18.jpeg',
+  content: [
+    'The business had a strong reputation but an outdated website that failed to convert visitors into leads.',
+    'We redesigned the website with a clear value proposition, improved structure, and optimized content for search engines.',
+    'This resulted in a consistent increase in high-quality inquiries and reduced dependence on referrals.',
+  ],
+},
 ];
 
 export function getDetailBySlug(basePath: 'services' | 'solutions', slug: string): DetailItem | undefined {
