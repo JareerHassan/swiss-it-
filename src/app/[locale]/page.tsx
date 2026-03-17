@@ -7,7 +7,20 @@ import { topDestinations } from "@/data/slider-sections";
 import { recommendationWinter, recommendationSummer } from "@/data/recommendation-sections";
 import Link from "next/link";
 
-export default function Home() {
+interface HomePageProps {
+  params?: { locale?: string | string[] };
+}
+
+export default function Home({ params }: HomePageProps) {
+  // Determine current locale from route
+  const localeParam = params?.locale;
+  const locale =
+    typeof localeParam === 'string'
+      ? localeParam
+      : Array.isArray(localeParam)
+      ? localeParam[0]
+      : 'en';
+
   return (
     <main className="relative min-h-screen">
       {/* Hero Section with Background */}
@@ -34,7 +47,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl mb-4 md:mb-6 drop-shadow-lg max-w-5xl">
           Smart Digital Solutions for Swiss Businesses
           </h1>
-        <Link href="/services">
+        <Link href={`/${locale}/services`}>
           <Button
             variant="outline"
             size="lg"
