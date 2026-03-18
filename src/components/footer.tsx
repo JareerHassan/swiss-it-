@@ -10,7 +10,6 @@ interface FooterProps {
 }
 
 const Footer = ({ locale = 'en' }: FooterProps) => {
-  // Helper to prepend locale to path
   const tLink = (path: string) => `/${locale}${path}`;
 
   return (
@@ -29,38 +28,51 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Links Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          {/* Column 1: Legal */}
-          <div>
-            <h3 className="font-bold text-lg mb-6">Legal Information</h3>
-            <ul className="space-y-4 border-t border-border-light pt-4">
-              <li><Link href={tLink('/terms')} className="text-sm hover:underline text-muted">Terms of Use</Link></li>
-              <li><Link href={tLink('/data-protection')} className="text-sm hover:underline text-muted">Data Protection</Link></li>
-              <li><Link href={tLink('/cookies')} className="text-sm hover:underline text-muted">Cookies</Link></li>
-              <li><Link href={tLink('/imprint')} className="text-sm hover:underline text-muted">Imprint</Link></li>
-              <li><Link href={tLink('/accessibility')} className="text-sm hover:underline text-muted">Accessibility Statement</Link></li>
-            </ul>
-          </div>
 
+          
           {/* Column 2: More Pages */}
           <div>
             <h3 className="font-bold text-lg mb-6">More Pages</h3>
             <ul className="space-y-4 border-t border-border-light pt-4">
               <li><Link href={tLink('/about')} className="text-sm hover:underline text-muted">About</Link></li>
               <li><Link href={tLink('/services')} className="text-sm hover:underline text-muted">Services</Link></li>
-              <li><Link href={tLink('/blog')} className="text-sm hover:underline text-muted">Blogs</Link></li>
               <li><Link href={tLink('/faq')} className="text-sm hover:underline text-muted">Faq</Link></li>
+              <li><Link href={tLink('/blog')} className="text-sm hover:underline text-muted">Blogs</Link></li>
               <li><Link href={tLink('/contact')} className="text-sm hover:underline text-muted">Contact</Link></li>
             </ul>
           </div>
+          {/* Column 1: Services */}
+          <div>
+            <h3 className="font-bold text-lg mb-6">Services</h3>
+            <ul className="space-y-4 border-t border-border-light pt-4">
+              <li><Link href={tLink('/services/website-development')} className="text-sm hover:underline text-muted">Website Development</Link></li>
+              <li><Link href={tLink('/services/hotel-booking-systems')} className="text-sm hover:underline text-muted">Hotel Direct Booking Solutions</Link></li>
+              <li><Link href={tLink('/services/mobile-app-development')} className="text-sm hover:underline text-muted">Mobile App Development</Link></li>
+              <li><Link href={tLink('/services/digital-marketing')} className="text-sm hover:underline text-muted">Digital Marketing</Link></li>
+              <li><Link href={tLink('/services/ai-automation')} className="text-sm hover:underline text-muted">AI Automation</Link></li>
+              <li><Link href={tLink('/services/consulting-growth-support')} className="text-sm hover:underline text-muted">Consulting & Growth Support</Link></li>
+            </ul>
+          </div>
+
 
           {/* Column 3: Contact */}
           <div>
             <h3 className="font-bold text-lg mb-6">Contact</h3>
-            <ul className="space-y-4 border-t border-border-light pt-4">
-              <li><Link href={tLink('/contact')} className="text-sm hover:underline text-muted">Address</Link></li>
-              <li><Link href={tLink('/help')} className="text-sm hover:underline text-muted">Help Center</Link></li>
-              <li><Link href={tLink('/media')} className="text-sm hover:underline text-muted">Media Corner</Link></li>
-              <li><Link href={tLink('/trade')} className="text-sm hover:underline text-muted">Trade Corner</Link></li>
+            <ul className="space-y-4 border-t border-border-light pt-4 text-sm text-muted">
+              <li>
+                Address:{" "}
+                <Link href="https://maps.app.goo.gl/wC5QgkJp5MQJ7e8M9" target="_blank" className="hover:underline">
+                  Bahnhofstrasse 21, 3860 Meiringen, Switzerland
+                </Link>
+              </li>
+              <li>
+                Phone / WhatsApp:{" "}
+                <Link href="tel:+4915223506691" className="hover:underline">+49 1522 3506691</Link>
+              </li>
+              <li>
+                Email:{" "}
+                <Link href="mailto:highlandgroupgmbh@gmail.com" className="hover:underline">highlandgroupgmbh@gmail.com</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,10 +82,13 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
           {/* Newsletter Button */}
           <div>
             <p className="text-sm font-bold mb-4">Newsletter</p>
-            <button className="bg-accent-red hover:opacity-90 text-white px-8 py-4 rounded-full flex items-center gap-3 transition-colors font-semibold">
+            <a
+              href="mailto:highlandgroupgmbh@gmail.com"
+              className="bg-accent-red hover:opacity-90 text-white px-8 py-4 rounded-full flex items-center gap-3 transition-colors font-semibold"
+            >
               <MdOutlineEmail className="text-xl" />
-              Register for Newsletter
-            </button>
+              Register via Email
+            </a>
           </div>
 
           {/* Social Icons */}
@@ -92,7 +107,16 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
         {/* Bottom Bar */}
         <div className="border-t border-border-light pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-sm text-muted font-medium">
-            © {new Date().getFullYear()} Highland Group GmbH
+            © {new Date().getFullYear()} Highland Group GmbH   .
+            <Link
+              href="https://oxmite.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#d91f26]  hover:text-[#d91f26]/80"
+            >
+              Developed by Oxmite Digital Ltd
+            </Link>
+          
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
-import { ChevronDown, MessageSquare, ArrowRight } from "lucide-react";
+import { ChevronDown, MessageSquare, ArrowRight, Link } from "lucide-react";
+import {Link as I18nLink} from "@/i18n/routing"; 
 
 const faqs = [
   {
@@ -153,13 +154,13 @@ export default function FAQPage() {
               navigate your specific requirements.
             </p>
 
-            <a
+            <I18nLink
               href="/contact"
               className="group/btn inline-flex items-center gap-2 bg-accent-red text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition-all duration-300 active:scale-95"
             >
               Contact Highland Group
               <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-            </a>
+            </I18nLink>
           </div>
         </div>
       </section>

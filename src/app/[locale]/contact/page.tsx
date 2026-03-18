@@ -118,33 +118,53 @@ export default function Contact() {
 
       {/* Contact Info Cards */}
       <section className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-20">
+        {/* Location / Address */}
         <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 rounded-xl text-accent-red">
             <MapPin className="w-7 h-7" />
           </div>
           <div>
             <p className="text-xs text-charcoal font-bold uppercase">Location</p>
-            <p className="text-sm font-medium text-muted">Switzerland</p>
+            <p className="text-sm font-medium text-muted">
+              <a
+                href="https://maps.app.goo.gl/wC5QgkJp5MQJ7e8M9"
+                target="_blank"
+                className="hover:underline"
+              >
+                Bahnhofstrasse 21, 3860 Meiringen, Switzerland
+              </a>
+            </p>
           </div>
         </div>
 
+        {/* Email */}
         <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl">
             <Mail className="w-7 h-7" />
           </div>
           <div>
             <p className="text-xs text-accent-red font-bold uppercase">Email Us</p>
-            <p className="text-sm font-medium">info@highlandgroup.com</p>
+            <p className="text-sm font-medium">
+              <a href="mailto:highlandgroupgmbh@gmail.com" className="hover:underline">
+                highlandgroupgmbh@gmail.com
+              </a>
+            </p>
           </div>
         </div>
 
+        {/* Phone / WhatsApp */}
         <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl">
             <Phone className="w-7 h-7" />
           </div>
           <div>
-            <p className="text-xs text-accent-red font-bold uppercase">Call Us</p>
-            <p className="text-sm font-medium">+41 XXX XXX XXX</p>
+            <p className="text-xs text-accent-red font-bold uppercase">Call / WhatsApp</p>
+            <p className="text-sm font-medium">
+              <a href="tel:+4915223506691" className="hover:underline">+49 1522 3506691</a> |{" "}
+              <a href="https://wa.me/4915223506691" target="_blank" className="hover:underline">
+                WhatsApp
+              </a>
+            </p>
           </div>
         </div>
       </section>

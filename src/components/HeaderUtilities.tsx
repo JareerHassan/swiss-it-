@@ -9,13 +9,13 @@ interface HeaderUtilitiesProps {
 // 2. Component ko batayein ke ye props use karega
 const HeaderUtilities = ({ isSolid }: HeaderUtilitiesProps) => {
   return (
-    <div className="hidden md:flex items-center space-x-8 font-medium">
+    <div className="hidden lg:flex items-center space-x-8 font-medium">
       
       {/* Language Selector */}
-      <button className={`hover:text-accent-red transition-all text-[13px] uppercase tracking-wider flex items-center gap-1.5 cursor-pointer group ${isSolid ? 'text-charcoal' : 'text-white'}`}>
+      {/* <button className={`hover:text-accent-red transition-all text-[13px] uppercase tracking-wider flex items-center gap-1.5 cursor-pointer group ${isSolid ? 'text-charcoal' : 'text-white'}`}>
         Language 
         <ChevronDown className={`w-3 h-3 transition-colors group-hover:text-accent-red ${isSolid ? 'text-charcoal/50' : 'text-slate-400'}`} />
-      </button>
+      </button> */}
 
       {/* Glassmorphic/Solid Contact Button */}
       <Link 

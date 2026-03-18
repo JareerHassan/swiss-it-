@@ -38,11 +38,11 @@ export default function BlogPage() {
 
             {/* Content */}
             <div className="space-y-6 order-2 lg:order-1">
-              <div className="flex items-center gap-3 text-sm text-muted">
+              {/* <div className="flex items-center gap-3 text-sm text-muted">
                 <span>{featuredPost.date}</span>
                 <span>•</span>
                 <span>{featuredPost.readingTime}</span>
-              </div>
+              </div> */}
 
             <Link href={`/blog/${featuredPost.slug}`} className="group/featured block space-y-4">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal leading-tight group-hover:text-accent-red transition-colors">
@@ -93,11 +93,11 @@ export default function BlogPage() {
 
                 {/* Content */}
                 <div className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 text-xs md:text-sm text-muted mb-3">
+                  {/* <div className="flex items-center gap-3 text-xs md:text-sm text-muted mb-3">
                     <span>{post.date}</span>
                     <span>•</span>
                     <span>{post.readingTime}</span>
-                  </div>
+                  </div> */}
 
                   <Link href={`/blog/${post.slug}`} className="group/link block">
                     <h3 className="text-xl md:text-2xl font-bold text-charcoal mb-3 group-hover:text-accent-red transition-colors">

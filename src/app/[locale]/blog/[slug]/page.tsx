@@ -30,13 +30,13 @@ export default async function BlogDetailPage({ params }: PageProps) {
       />
 
       <article className="py-8 md:py-12 lg:py-16 border-t border-border-light">
-        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 max-w-4xl">
+        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 max-w-6xl">
           <header className="space-y-4 md:space-y-6 mb-10 md:mb-12">
-            <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
+            {/* <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
               <span>{post.date}</span>
               <span>•</span>
               <span>{post.readingTime}</span>
-            </div>
+            </div> */}
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal leading-tight">
               {post.title}
