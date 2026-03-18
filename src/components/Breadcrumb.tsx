@@ -18,7 +18,7 @@ export default function HeroSection({ items, title, subtitle, description }: Her
 
   return (
     <div className="relative w-full min-h-[500px] flex items-center overflow-hidden pt-28">
-      
+
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
@@ -47,7 +47,7 @@ export default function HeroSection({ items, title, subtitle, description }: Her
                   <li key={index} className="flex items-center">
                     {isLast || !item.href ? (
                       <span className="flex items-center gap-2 text-white">
-                        {isHome }
+                        {isHome}
                         {item.label}
                       </span>
                     ) : (
@@ -55,7 +55,7 @@ export default function HeroSection({ items, title, subtitle, description }: Her
                         href={item.href}
                         className="flex items-center gap-2 hover:text-red-500 transition-colors"
                       >
-                        {isHome }
+                        {isHome}
                         {item.label}
                       </Link>
                     )}
@@ -88,14 +88,15 @@ export default function HeroSection({ items, title, subtitle, description }: Her
           </p>
 
           {/* Buttons */}
+          {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-gray-200 transition">
+            <Link href="/services" className="bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-gray-200 transition inline-block">
               Turn your vision into success!
-            </button>
+            </Link>
 
-            <button className="bg-red-600 text-white px-8 py-4 rounded-sm font-bold hover:bg-red-700 transition">
+            <Link href="/contact" className="bg-red-600 text-white px-8 py-4 rounded-sm font-bold hover:bg-red-700 transition inline-block">
               Book Your Free Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

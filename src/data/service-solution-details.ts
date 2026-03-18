@@ -109,7 +109,25 @@ export const detailItems: DetailItem[] = [
     'The goal is simple: save time, respond faster, and allow your team to focus on higher-value work that drives growth.',
   ],
 },
-
+{
+  slug: 'consulting-growth-support',
+  basePath: 'services',
+  type: 'core-service',
+  title: 'Consulting & Growth Support',
+  subtitle: 'Strategic guidance for business expansion',
+  summary:
+    'We provide strategic consulting and ongoing support to help businesses build better systems and achieve long-term growth.',
+  image: '/assets/img-20.jpg',
+  stats: [
+    { label: 'Impact areas', value: 'Support, sales, operations' },
+    { label: 'Approach', value: 'Practical automation' },
+  ],
+  content: [
+    'Businesses spend too much time on repetitive tasks. We help you automate processes using AI-powered tools such as chatbots, WhatsApp assistants, and workflow automation.',
+    'These systems handle customer inquiries, capture leads, and support your team by reducing manual workload.',
+    'The goal is simple: save time, respond faster, and allow your team to focus on higher-value work that drives growth.',
+  ],
+},
   // Value Offerings (homepage "Value Offerings" section)
  {
   slug: 'increase-revenue',
