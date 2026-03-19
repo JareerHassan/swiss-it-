@@ -64,7 +64,7 @@ export default function BlogPage() {
       </section>
 
       {/* All Posts Grid */}
-      <section className="py-16 md:py-24 lg:py-32">
+      <section className="py-16">
         <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 ">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-12 md:mb-16 text-center md:text-left">
             All Articles
@@ -121,11 +121,11 @@ export default function BlogPage() {
           </div>
 
           {/* Optional: Load more / Pagination */}
-          <div className="text-center mt-12 md:mt-16">
+          {/* <div className="text-center mt-12 md:mt-16">
             <button className="px-8 py-4 border border-accent-red/30 rounded-xl text-accent-red font-medium hover:bg-accent-red/10 transition-colors">
               Load more articles
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </main>

@@ -114,9 +114,9 @@ export default function ServicesPage({
 
 
       {/* Services Section */}
-      <section className="py-16 md:py-24 lg:py-32 border-b border-border-light bg-bg-soft">
+      <section className="py-16  border-b border-border-light bg-bg-soft">
         <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16">
-          <div className="mb-12 md:mb-16 lg:mb-20">
+          <div className="mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               What We Do Best
             </h2>
@@ -124,7 +124,6 @@ export default function ServicesPage({
               We combine business strategy, technology, and digital execution to create solutions that do more than look good — they are designed to perform.
             </p>
           </div>
-
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
               const Icon = service.icon;
@@ -133,15 +132,17 @@ export default function ServicesPage({
                 <Link
                   key={service.slug}
                   href={`/${locale}/services/${service.slug}`}
-                >                <article
-                  key={service.title}
-                  className="group relative rounded-2xl border border-border-light overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all"
+                  className="h-full"   // ✅ important
                 >
+                  <article
+                    className="group relative h-full flex flex-col rounded-2xl border border-border-light overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all"
+                  >
                     <div
                       className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:opacity-20"
                       style={{ backgroundImage: `url(${service.bgImage})` }}
                     />
-                    <div className="relative p-6">
+
+                    <div className="relative p-6 flex flex-col flex-1">
                       <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent-red/10 text-accent-red">
                         <Icon className="w-7 h-7" />
                       </div>
@@ -150,7 +151,7 @@ export default function ServicesPage({
                         {service.title}
                       </h3>
 
-                      <p className="text-muted text-sm leading-relaxed">
+                      <p className="text-muted text-sm leading-relaxed flex-1">
                         {service.body}
                       </p>
                     </div>

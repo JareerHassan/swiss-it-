@@ -79,7 +79,7 @@ export default function About() {
 
 
       {/* Who We Are */}
-      <section className="py-24 bg-bg-soft border-y border-border-light">
+      <section className="py-16 bg-bg-soft border-y border-border-light">
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-7 space-y-6">
@@ -107,7 +107,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-bg-soft">
+      <section className="py-12 bg-bg-soft">
         <div className="container mx-auto px-8">
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-4 text-charcoal">Our Core Values</h2>
@@ -127,7 +127,7 @@ export default function About() {
       </section>
 
       {/* Process */}
-      <section className="py-20 md:py-28 bg-bg-soft border-t border-border-light">
+      <section className="py-12 bg-bg-soft border-t border-border-light">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <h2 className="text-3xl font-bold mb-16 text-charcoal">How We Work</h2>
 

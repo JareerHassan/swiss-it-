@@ -136,8 +136,8 @@ export default function FAQPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="pb-32 container mx-auto max-w-7xl px-6">
-        <div className="group relative rounded-[2.5rem] overflow-hidden border border-border-light bg-bg-soft">
+      <section className="pb-12 container mx-auto max-w-7xl px-6">
+        <div className="group relative rounded-[1.5rem] overflow-hidden border border-border-light bg-bg-soft">
           <div className="relative rounded-[2.5rem] p-10 md:p-16 text-center">
             <div className="flex justify-center mb-6">
               <div className="p-4 bg-accent-red/10 rounded-full text-accent-red">
