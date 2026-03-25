@@ -8,12 +8,13 @@ import { recommendationWinter, recommendationSummer } from "@/data/recommendatio
 import Link from "next/link";
 
 interface HomePageProps {
-  params?: { locale?: string | string[] };
+  params: Promise<{ locale?: string | string[] }>;
 }
 
-export default function Home({ params }: HomePageProps) {
+export default async function Home({ params }: HomePageProps) {
   // Determine current locale from route
-  const localeParam = params?.locale;
+  const resolvedParams = await params;
+  const localeParam = resolvedParams?.locale;
   const locale =
     typeof localeParam === 'string'
       ? localeParam

@@ -13,7 +13,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
   const tLink = (path: string) => `/${locale}${path}`;
 
   return (
-    <footer className="bg-bg-soft text-charcoal pt-16 pb-8 font-sans border-t border-border-light">
+    <footer className="bg-bg-soft text-charcoal mt-14 pb-8 font-sans border-t border-border-light">
       {/* Decorative Banner */}
       <div className="relative w-full h-40 mb-12 overflow-hidden shadow-lg">
         <Image

@@ -32,13 +32,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       />
 
       <section className="py-10 md:py-14 lg:py-16 border-t border-border-light bg-bg-main">
-        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 max-w-5xl">
+        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-12">
           {/* Hero image */}
           <div className="mb-10 md:mb-12 rounded-2xl overflow-hidden shadow-lg bg-bg-soft">
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-[260px] md:h-[340px] lg:h-[400px] object-cover"
+              className="w-full h-full"
             />
           </div>
 
