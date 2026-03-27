@@ -3,7 +3,7 @@ import React from 'react';
 // compute base URL for uploads (strip /api from public API URL)
 export const UPLOADS_BASE =
   (process.env.NEXT_PUBLIC_API_URL || '').replace(/\/api\/?$/, '') ||
-  'http://backend.highlandgroup.ch';
+  'https://backend.highlandgroup.ch';
 
 // normalize any stored path/URL to a full src that will resolve correctly
 export function resolveImageUrl(raw?: string): string | null {

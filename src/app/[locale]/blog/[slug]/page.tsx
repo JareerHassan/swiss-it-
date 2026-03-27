@@ -13,7 +13,7 @@ type PageProps = {
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL ||
-  "http://backend.highlandgroup.ch/api";
+  "https://backend.highlandgroup.ch/api";
 
 async function getBlog(slug: string) {
   try {
