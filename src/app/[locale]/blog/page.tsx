@@ -1,13 +1,16 @@
+// app/blog/page.tsx (Server Component)
 import Breadcrumb from "@/components/Breadcrumb";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import axios from "axios";
+import Image from "next/image";
 import { resolveImageUrl } from "@/lib/blog-utils";
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://backend.highlandgroup.ch/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://backend.highlandgroup.ch/api";
 
+// ==============================
+// FETCH BLOGS
+// ==============================
 async function getBlogs() {
   try {
     const res = await axios.get(`${API_BASE_URL}/blogs`);
@@ -18,6 +21,9 @@ async function getBlogs() {
   }
 }
 
+// ==============================
+// BLOG PAGE (Server Component)
+// ==============================
 export default async function BlogPage() {
   const blogs = await getBlogs();
 
@@ -26,7 +32,6 @@ export default async function BlogPage() {
     { label: "Blog" },
   ];
 
-  // Featured = first blog
   const featuredPost = blogs[0];
   const otherPosts = blogs.slice(1);
 
@@ -43,15 +48,17 @@ export default async function BlogPage() {
       {/* Featured Post */}
       {featuredPost && (
         <section className="py-12 md:py-16 lg:py-20 border-b border-border-light bg-bg-soft">
-          <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 ">
+          <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[16/10] lg:aspect-auto order-1 lg:order-2 group">
-                <img
-                  src={resolveImageUrl(featuredPost.coverImage) || ""}
+                <Image
+                  src={resolveImageUrl(featuredPost.coverImage) || "/fallback.jpg"}
                   alt={featuredPost.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  width={800}
+                  height={500}
+                  unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
               </div>
@@ -83,7 +90,7 @@ export default async function BlogPage() {
 
       {/* All Posts */}
       <section className="py-16">
-        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 ">
+        <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-12 md:mb-16 text-center md:text-left">
             All Articles
           </h2>
@@ -101,20 +108,20 @@ export default async function BlogPage() {
               >
                 {/* Image */}
                 <div className="aspect-[16/9] relative overflow-hidden">
-                  <img
-                    src={resolveImageUrl(post.coverImage) || ""}
+                  <Image
+                    src={resolveImageUrl(post.coverImage) || "/fallback.jpg"}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={800}
+                    height={450}
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
 
                 {/* Content */}
                 <div className="p-6 md:p-8">
-                  <Link
-                    href={`/blog/${post.seo?.slug || post._id}`}
-                    className="group/link block"
-                  >
+                  <Link href={`/blog/${post.seo?.slug || post._id}`} className="group/link block">
                     <h3 className="text-xl md:text-2xl font-bold text-charcoal mb-3 group-hover:text-accent-red transition-colors">
                       {post.seo?.meta_title || post.title}
                     </h3>

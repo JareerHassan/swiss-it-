@@ -26,6 +26,10 @@ const nextConfig: NextConfig = {
       protocol: 'https',
       hostname: 'marketplacebackend.oxmite.com',
     },
+       {
+        protocol: 'https',
+        hostname: 'backend.highlandgroup.ch', // ✅ add this for your blog images
+      },
   ],
 },
 };
