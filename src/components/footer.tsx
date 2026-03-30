@@ -13,7 +13,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
   const tLink = (path: string) => `/${locale}${path}`;
 
   return (
-    <footer className="bg-bg-soft text-charcoal mt-14 pb-8 font-sans border-t border-border-light">
+    <footer className="bg-bg-soft text-charcoal  pb-8 font-sans border-t border-border-light">
       {/* Decorative Banner */}
       <div className="relative w-full h-40 mb-12 overflow-hidden shadow-lg">
         <Image
@@ -45,11 +45,11 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
           <div>
             <h3 className="font-bold text-lg mb-6">Services</h3>
             <ul className="space-y-4 border-t border-border-light pt-4">
+              <li><Link href={tLink('/services/ai-automation')} className="text-sm hover:underline text-muted">AI Automation</Link></li>
               <li><Link href={tLink('/services/website-development')} className="text-sm hover:underline text-muted">Website Development</Link></li>
               <li><Link href={tLink('/services/hotel-booking-systems')} className="text-sm hover:underline text-muted">Hotel Direct Booking Solutions</Link></li>
               <li><Link href={tLink('/services/mobile-app-development')} className="text-sm hover:underline text-muted">Mobile App Development</Link></li>
               <li><Link href={tLink('/services/digital-marketing')} className="text-sm hover:underline text-muted">Digital Marketing</Link></li>
-              <li><Link href={tLink('/services/ai-automation')} className="text-sm hover:underline text-muted">AI Automation</Link></li>
               <li><Link href={tLink('/services/consulting-growth-support')} className="text-sm hover:underline text-muted">Consulting & Growth Support</Link></li>
             </ul>
           </div>

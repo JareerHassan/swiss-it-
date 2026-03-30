@@ -18,11 +18,11 @@ import {
 import HeaderUtilities from '@/components/HeaderUtilities';
 
 const servicesList = [
+  { title: 'AI Automation', slug: 'ai-automation', icon: Bot },
   { title: 'Website Development', slug: 'website-development', icon: Globe },
   { title: 'Hotel Direct Booking Solutions', slug: 'hotel-booking-systems', icon: Hotel },
   { title: 'Mobile App Development', slug: 'mobile-app-development', icon: Smartphone },
   { title: 'Digital Marketing', slug: 'digital-marketing', icon: Megaphone },
-  { title: 'AI Automation', slug: 'ai-automation', icon: Bot },
   { title: 'Consulting & Growth Support', slug: 'consulting-growth-support', icon: Lightbulb },
 ];
 
@@ -156,9 +156,7 @@ const Header = () => {
                             onClick={() => setIsMobileOpen(false)}
                             className="flex items-center gap-3 py-2 w-full text-left hover:text-accent-red transition-colors"
                           >
-                            <div className="w-9 h-9 rounded-lg bg-accent-red/10 flex items-center justify-center flex-shrink-0">
-                              <Icon className="w-5 h-5 text-accent-red" />
-                            </div>
+                       
                             <span>{service.title}</span>
                           </Link>
                         );

@@ -25,6 +25,13 @@ export default function ServicesPage({
   ];
 
   const services = [
+        {
+      slug: 'ai-automation',
+      icon: Bot,
+      title: "AI Automation",
+      body: "Chatbots, WhatsApp assistants, AI booking tools, lead automation, and workflow systems that save time and improve service quality.",
+      bgImage: "/assets/img-17.jpeg",      
+    },
     {
       slug: 'website-development',
       icon: Globe,
@@ -53,13 +60,7 @@ export default function ServicesPage({
       body: "SEO, Google Ads, Google Business Profile optimisation, and targeted campaigns that help businesses attract more qualified customers online.",
       bgImage: "/assets/img-16.png",
     },
-    {
-      slug: 'ai-automation',
-      icon: Bot,
-      title: "AI Automation",
-      body: "Chatbots, WhatsApp assistants, AI booking tools, lead automation, and workflow systems that save time and improve service quality.",
-      bgImage: "/assets/img-17.jpeg",
-    },
+
     {
       slug: 'consulting-growth-support',
       icon: Lightbulb,
