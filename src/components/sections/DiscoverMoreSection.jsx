@@ -111,8 +111,8 @@ export default function DiscoverMoreSection() {
             </h2>
 
             <p className="max-w-md mx-auto md:mx-0 text-sm md:text-base text-muted">
-              Highland Group helps businesses across Europe grow with websites, mobile apps, digital
-              marketing, AI automation, and business systems designed for measurable results.
+              Highland Group helps businesses across Europe grow with websites, AI automation, mobile apps, digital
+              marketing, and business systems designed for measurable results.
             </p>
 
             <a href="/contact" className="inline-block font-medium text-accent-red hover:underline">
