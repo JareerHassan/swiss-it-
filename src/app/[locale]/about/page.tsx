@@ -55,7 +55,7 @@ const processSteps = [
   {
     step: "03",
     title: "Development",
-    body: "We build reliable websites, mobile apps, and automation systems with performance in mind."
+    body: "We build reliable websites, AI automation, and mobile apps with performance in mind."
   },
   {
     step: "04",

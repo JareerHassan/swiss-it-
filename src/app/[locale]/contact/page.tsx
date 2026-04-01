@@ -17,8 +17,7 @@ export default function Contact() {
           items={breadcrumbItems}
           title="Let’s Build Smarter Digital Systems"
           subtitle="Have a project in mind, a business challenge to solve, or simply exploring new opportunities? Reach out to us."
-          description="Highland Group helps businesses grow with websites, mobile apps, digital marketing, and AI automation built for real business results."
-        />
+description="Highland Group helps businesses grow with websites, AI automation, mobile apps, and digital marketing—built for real business results."        />
       </div>
 
 

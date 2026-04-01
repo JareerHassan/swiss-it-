@@ -104,7 +104,7 @@ export const detailItems: DetailItem[] = [
       { label: 'Approach', value: 'Practical automation' },
     ],
     content: [
-      'Many businesses lose valuable time on repetitive tasks that can be automated. We help you introduce AI-powered systems such as chatbots, WhatsApp assistants, lead capture tools, and workflow automations.',
+'Many businesses lose valuable time on repetitive tasks that can be automated. We help you leverage AI automation to streamline operations using chatbots, WhatsApp assistants, lead capture systems, and intelligent workflows.',
       'These solutions can handle common inquiries, qualify leads, reduce manual coordination, and improve consistency across customer interactions and internal processes.',
       'The result is a faster, more efficient operation that frees your team to focus on higher-value work like service quality, customer relationships, and growth.',
     ],

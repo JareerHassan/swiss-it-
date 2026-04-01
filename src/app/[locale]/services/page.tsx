@@ -110,7 +110,7 @@ export default function ServicesPage({
         items={breadcrumbItems}
         title="Digital Solutions Built for Business Growth"
         subtitle="Highland Group provides practical digital services for businesses that want stronger visibility, better customer experience, and measurable growth."
-        description="We help Swiss hotels, tourism companies, and local businesses improve performance through modern websites, mobile apps, digital marketing, and AI automation."
+        description="We help Swiss hotels, tourism companies, and local businesses improve performance through modern websites, AI automation, mobile apps,  and digital marketing."
       />
 
 
