@@ -4,51 +4,56 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { ChevronDown, MessageSquare, ArrowRight, Link } from "lucide-react";
 import {Link as I18nLink} from "@/i18n/routing"; 
 
-const faqs = [
+const faqs = [ 
   {
     question: "What services does Highland Group offer?",
     answer:
-      "Highland Group provides digital solutions including website development, hotel direct booking solutions, mobile app development, digital marketing, and AI automation.",
+      "Highland Group provides end-to-end digital solutions including website development, hotel direct booking systems, AI automation, mobile app development, and digital marketing designed for business growth.",
   },
   {
     question: "Which industries do you serve?",
     answer:
-      "We work with hotels, tourism businesses, restaurants, clinics, real estate companies, local service businesses, and growing SMEs across Switzerland and Europe.",
+      "We work with hotels, tourism businesses, restaurants, clinics, real estate companies, local service businesses, and growing SMEs worldwide, serving both domestic and international clients.",
+  },
+  {
+    question: "Do you work with international clients?",
+    answer:
+      "Yes. Highland Group works with clients from all over the world, supporting both international and domestic businesses with scalable digital solutions.",
   },
   {
     question: "How does a typical project start?",
     answer:
-      "Every project starts with a consultation where we understand your business goals, challenges, and the right digital solution for your needs.",
+      "Every project starts with a consultation where we understand your business goals, challenges, and recommend the most effective digital strategy.",
   },
   {
     question: "Can Highland Group work alongside our team?",
     answer:
-      "Yes. We can work as an external digital partner or collaborate directly with your internal team.",
+      "Yes. We can act as your external digital partner or collaborate closely with your internal team to deliver results efficiently.",
   },
   {
     question: "How long do projects usually take?",
     answer:
-      "Timelines depend on the type and complexity of the project. Simpler websites take less time, while apps, booking systems, and automation projects may take longer.",
+      "Project timelines depend on scope and complexity. Websites are delivered faster, while mobile apps, booking systems, and automation solutions require more time.",
   },
   {
     question: "Do you only build new websites?",
     answer:
-      "No. We can also redesign, improve, and optimise existing websites and digital systems.",
+      "No. We also redesign, optimise, and upgrade existing websites and digital systems to improve performance and conversions.",
   },
   {
     question: "Can you help us get more direct bookings or leads?",
     answer:
-      "Yes. We create systems designed to improve direct bookings, lead generation, and customer conversion.",
+      "Yes. Our systems are built to increase direct bookings, generate high-quality leads, and improve overall conversion rates.",
   },
   {
     question: "Do you provide support after launch?",
     answer:
-      "Yes. We offer continued support, updates, optimisation, and long-term improvement.",
+      "Yes. We provide ongoing support, updates, optimisation, and long-term digital growth assistance.",
   },
   {
     question: "How do we get started with Highland Group?",
     answer:
-      "Book a free consultation and we will discuss the right solution for your business.",
+      "Simply book a free consultation and our team will guide you with the best strategy for your business.",
   },
 ];
 
@@ -66,7 +71,7 @@ export default function FAQPage() {
       <Breadcrumb
         items={breadcrumbItems}
         title="Frequently Asked Questions"
-        subtitle="Highland Group helps businesses grow with websites, mobile apps, digital marketing, and AI automation."
+        subtitle="Highland Group helps businesses grow with websites,  AI automation, mobile apps, and digital marketing. "
         description="We work with hotels, tourism companies, and service-based businesses that want stronger digital presence, better customer experience, and smarter systems for growth."
       />
 

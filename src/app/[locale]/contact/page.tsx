@@ -153,7 +153,7 @@ export default function Contact() {
         </div>
 
         {/* Phone / WhatsApp */}
-        <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
+        {/* <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
           <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl">
             <Phone className="w-7 h-7" />
           </div>
@@ -166,7 +166,7 @@ export default function Contact() {
               </a>
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );

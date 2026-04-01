@@ -7,8 +7,52 @@ export default function DiscoverMoreSection() {
     <section className="relative z-10 w-full bg-bg-soft py-16  text-charcoal border-t border-border-light">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10">
 
+            <div className="mt-8 grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.05fr)] md:items-center">
+
+          {/* Content */}
+          <div className="order-2 md:order-1 space-y-4 md:space-y-5 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 text-xs font-medium text-muted">
+              <span className="h-4 w-4 rounded-full bg-border-light text-charcoal text-center text-[10px] leading-4">↑</span>
+              <span>Efficiency</span>
+            </div>
+
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">
+              Save time with AI automation and smarter workflows
+            </h3>
+
+            <p className="max-w-md mx-auto md:mx-0 text-sm md:text-base leading-relaxed text-muted">
+              From AI chatbots to automated lead handling and CRM workflows, we help businesses reduce manual
+              work, respond faster, and operate more efficiently.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="order-1 md:order-2 relative flex justify-center">
+            <div className="absolute left-8 right-3 top-8 h-56 sm:h-64 md:h-72 lg:h-80 rounded-[40px] bg-border-light" />
+
+            <div className="relative z-10 w-[220px] sm:w-[250px] md:w-[280px] overflow-hidden rounded-[36px] border border-border-light bg-bg-main shadow-lg">
+              <div className="relative h-[300px] sm:h-[340px] md:h-[360px] w-full bg-border-light">
+                <Image
+                  src="/assets/img-17.jpeg"
+                  alt="AI automation and smart workflow systems"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 220px, (max-width: 768px) 250px, 280px"
+                  priority
+                />
+              </div>
+
+              <div className="flex items-center justify-center gap-3 border-t border-border-light bg-bg-main px-4 sm:px-5 py-3 sm:py-4">
+                <span className="rounded-full bg-accent-red px-3 sm:px-4 py-1.5 text-xs font-medium text-white shadow-sm">
+                  AI Automation
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Row 1 */}
-        <div className="grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] md:items-center">
+        <div className="grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] md:items-center mt-8">
           
           {/* Image */}
           <div className="relative flex justify-center">
@@ -53,49 +97,7 @@ export default function DiscoverMoreSection() {
         </div>
 
         {/* Row 2 */}
-        <div className="mt-16 sm:mt-20 md:mt-24 grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.05fr)] md:items-center">
-
-          {/* Content */}
-          <div className="order-2 md:order-1 space-y-4 md:space-y-5 text-center md:text-left">
-            <div className="inline-flex items-center gap-2 text-xs font-medium text-muted">
-              <span className="h-4 w-4 rounded-full bg-border-light text-charcoal text-center text-[10px] leading-4">↑</span>
-              <span>Efficiency</span>
-            </div>
-
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">
-              Save time with AI automation and smarter workflows
-            </h3>
-
-            <p className="max-w-md mx-auto md:mx-0 text-sm md:text-base leading-relaxed text-muted">
-              From AI chatbots to automated lead handling and CRM workflows, we help businesses reduce manual
-              work, respond faster, and operate more efficiently.
-            </p>
-          </div>
-
-          {/* Image */}
-          <div className="order-1 md:order-2 relative flex justify-center">
-            <div className="absolute left-8 right-3 top-8 h-56 sm:h-64 md:h-72 lg:h-80 rounded-[40px] bg-border-light" />
-
-            <div className="relative z-10 w-[220px] sm:w-[250px] md:w-[280px] overflow-hidden rounded-[36px] border border-border-light bg-bg-main shadow-lg">
-              <div className="relative h-[300px] sm:h-[340px] md:h-[360px] w-full bg-border-light">
-                <Image
-                  src="/assets/img-17.jpeg"
-                  alt="AI automation and smart workflow systems"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 220px, (max-width: 768px) 250px, 280px"
-                  priority
-                />
-              </div>
-
-              <div className="flex items-center justify-center gap-3 border-t border-border-light bg-bg-main px-4 sm:px-5 py-3 sm:py-4">
-                <span className="rounded-full bg-accent-red px-3 sm:px-4 py-1.5 text-xs font-medium text-white shadow-sm">
-                  AI Automation
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+    
 
         {/* Row 3 */}
         <div className="mt-20 sm:mt-24 md:mt-28 lg:mt-32 grid gap-10 md:grid-cols-2 md:items-center">

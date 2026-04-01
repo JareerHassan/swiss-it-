@@ -72,7 +72,7 @@ export default function About() {
       <Breadcrumb
         items={breadcrumbItems}
         title="We Build Digital Growth Systems"
-        subtitle="Highland Group helps Swiss businesses grow with websites, mobile apps, digital marketing, and AI automation."
+        subtitle="Highland Group helps Swiss businesses grow with websites, AI automation, mobile apps, and digital marketing."
         description="We create practical digital systems that increase direct bookings, generate more leads, and improve business efficiency."
       />
 
@@ -85,12 +85,13 @@ export default function About() {
             <div className="md:col-span-7 space-y-6">
               <h2 className="text-3xl font-semibold text-charcoal">Who We Are</h2>
               <p className="text-lg text-charcoal leading-relaxed max-w-2xl">
-                Highland Group is a Switzerland-focused digital solutions company helping hotels, tourism businesses, and local companies grow through modern technology.
+                Highland Group is a modern digital solutions company working with both domestic and international clients from around the world.
               </p>
               <p className="text-lg text-charcoal leading-relaxed max-w-2xl">
-                We do not simply build websites. We create digital growth systems designed to increase direct bookings, improve customer experience, automate repetitive work, and deliver measurable business results.
+                We create digital growth systems designed to increase direct bookings, improve customer experience, automate repetitive work, and deliver measurable business results.
               </p>
-              <p className="text-lg text-charcoal leading-relaxed max-w-2xl">Highland Group Office
+              <p className="text-lg text-charcoal leading-relaxed max-w-2xl">
+                Highland Group 
               </p>
             </div>
 

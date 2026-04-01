@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './[locale]/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Switzerland',
-  description: 'Discover Switzerland',
+  title: 'Highland Group ',
+  description: 'Highland Group is a Swiss-based digital solutions provider specializing in website development, hotel direct booking solutions, AI automation, mobile app development, web development and digital marketing. We help businesses grow with smart digital systems built for real results.',
 };
 
 export default function RootLayout({

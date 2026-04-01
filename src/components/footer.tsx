@@ -37,7 +37,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
               <li><Link href={tLink('/about')} className="text-sm hover:underline text-muted">About</Link></li>
               <li><Link href={tLink('/services')} className="text-sm hover:underline text-muted">Services</Link></li>
               <li><Link href={tLink('/faq')} className="text-sm hover:underline text-muted">Faq</Link></li>
-              <li><Link href={tLink('/blog')} className="text-sm hover:underline text-muted">Blogs</Link></li>
+              {/* <li><Link href={tLink('/blog')} className="text-sm hover:underline text-muted">Blogs</Link></li> */}
               <li><Link href={tLink('/contact')} className="text-sm hover:underline text-muted">Contact</Link></li>
             </ul>
           </div>
@@ -65,10 +65,10 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
                   Bahnhofstrasse 21, 3860 Meiringen, Switzerland
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 Phone / WhatsApp:{" "}
                 <Link href="tel:+4915223506691" className="hover:underline">+49 1522 3506691</Link>
-              </li>
+              </li> */}
               <li>
                 Email:{" "}
                 <Link href="mailto:highlandgroupgmbh@gmail.com" className="hover:underline">highlandgroupgmbh@gmail.com</Link>
@@ -92,7 +92,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
           </div>
 
           {/* Social Icons */}
-          <div>
+          {/* <div>
             <p className="text-sm font-bold mb-4">Follow us</p>
             <div className="flex gap-2">
               {[FaFacebookF, FaTiktok, FaInstagram, FaLinkedinIn, FaPinterestP, FaYoutube].map((Icon, idx) => (
@@ -101,7 +101,7 @@ const Footer = ({ locale = 'en' }: FooterProps) => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Bar */}

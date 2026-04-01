@@ -1,4 +1,15 @@
 export const topAttractionsSlides = [
+    {
+    id: 'ai-automation',
+    category: 'Core Services',
+    title: 'AI & Business Automation',
+    description:
+      'Automate repetitive tasks, respond faster to customers, and improve efficiency with AI-powered tools and smart workflows.',
+    imageSrc:
+      '/assets/img-17.jpeg',
+    imageAlt: 'AI automation and smart business systems',
+    href: '/services/ai-automation',
+  },
   {
     id: 'website-development',
     category: 'Core Services',
@@ -10,17 +21,7 @@ export const topAttractionsSlides = [
     imageAlt: 'Website development workspace with laptop and code',
     href: '/services/website-development',
   },
-  {
-    id: 'ai-automation',
-    category: 'Core Services',
-    title: 'AI & Business Automation',
-    description:
-      'Automate repetitive tasks, respond faster to customers, and improve efficiency with AI-powered tools and smart workflows.',
-    imageSrc:
-      '/assets/img-17.jpeg',
-    imageAlt: 'AI automation and smart business systems',
-    href: '/services/ai-automation',
-  },
+
  {
   id: 'mobile-app-development',
   category: 'Core Services',

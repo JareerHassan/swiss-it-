@@ -118,7 +118,7 @@ const Header = () => {
             </div>
             <Link href="/faq" className="hover:text-accent-red transition-colors">Faq</Link>
 
-            <Link href="/blog" className="hover:text-accent-red transition-colors">Blogs</Link>
+            {/* <Link href="/blog" className="hover:text-accent-red transition-colors">Blogs</Link> */}
             <Link href="/contact" className="hover:text-accent-red transition-colors">Contact</Link>
           </nav>
 
@@ -164,7 +164,7 @@ const Header = () => {
                     </div>
                   </details>
                   <Link href="/faq" onClick={() => setIsMobileOpen(false)} className="hover:text-accent-red transition-colors py-1">Faq</Link>
-                  <Link href="/blog" onClick={() => setIsMobileOpen(false)} className="hover:text-accent-red transition-colors py-1">Blogs</Link>
+                  {/* <Link href="/blog" onClick={() => setIsMobileOpen(false)} className="hover:text-accent-red transition-colors py-1">Blogs</Link> */}
                   <Link href="/contact" onClick={() => setIsMobileOpen(false)} className="hover:text-accent-red transition-colors py-1 ">Contact</Link>
                 </nav>
               </SheetContent>
