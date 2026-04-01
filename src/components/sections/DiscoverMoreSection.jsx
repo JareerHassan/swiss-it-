@@ -33,7 +33,7 @@ export default function DiscoverMoreSection() {
             <div className="relative z-10 w-[220px] sm:w-[250px] md:w-[280px] overflow-hidden rounded-[36px] border border-border-light bg-bg-main shadow-lg">
               <div className="relative h-[300px] sm:h-[340px] md:h-[360px] w-full bg-border-light">
                 <Image
-                  src="/assets/img-17.jpeg"
+                  src="/assets/img-25.jpg"
                   alt="AI automation and smart workflow systems"
                   fill
                   className="object-cover"

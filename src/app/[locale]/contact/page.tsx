@@ -1,29 +1,136 @@
-"use client";
-
+import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
-import { Send, MapPin, Mail, Sparkles, Phone } from "lucide-react";
+import { Send, MapPin, Mail, Sparkles } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Contact Highland Group | Swiss IT Company",
+  description:
+    "Contact Highland Group for website development, AI automation, mobile apps, hotel booking systems, and digital marketing services for Swiss businesses.",
+  keywords: [
+    "Contact Highland Group",
+    "Swiss IT company contact",
+    "website development Switzerland contact",
+    "AI automation Switzerland contact",
+    "digital marketing Switzerland contact",
+    "hotel booking systems Switzerland",
+    "mobile app development Switzerland contact",
+    "Meiringen IT company",
+  ],
+  alternates: {
+    canonical: "http://highlandgroup.ch/en/contact",
+  },
+  openGraph: {
+    title: "Contact Highland Group | Swiss IT Company",
+    description:
+      "Reach out to Highland Group for websites, AI automation, digital marketing, mobile apps, and hotel booking solutions.",
+    url: "http://highlandgroup.ch/en/contact",
+    siteName: "Highland Group",
+    type: "website",
+    locale: "en_CH",
+    images: [
+      {
+        url: "http://highlandgroup.ch/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Highland Group",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Highland Group | Swiss IT Company",
+    description:
+      "Reach out to Highland Group for websites, AI automation, digital marketing, mobile apps, and hotel booking solutions.",
+    images: ["http://highlandgroup.ch/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Contact() {
   const breadcrumbItems = [
     { label: "Home", href: "/" },
-    { label: "Contact" }
+    { label: "Contact" },
   ];
+
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Highland Group",
+    url: "http://highlandgroup.ch/en/contact",
+    description:
+      "Contact Highland Group for website development, AI automation, mobile apps, hotel booking systems, and digital marketing services.",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Highland Group",
+      url: "http://highlandgroup.ch",
+      logo: "http://highlandgroup.ch/logo.png",
+      email: "highlandgroupgmbh@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Bahnhofstrasse 21",
+        postalCode: "3860",
+        addressLocality: "Meiringen",
+        addressCountry: "CH",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "highlandgroupgmbh@gmail.com",
+        areaServed: "CH",
+        availableLanguage: ["English"],
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "http://highlandgroup.ch/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact",
+        item: "http://highlandgroup.ch/en/contact",
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-bg-soft text-charcoal selection:bg-accent-red/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactPageSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
       {/* Breadcrumb Section */}
       <div className="bg-gradient-to-b from-bg-soft/50 to-transparent">
         <Breadcrumb
           items={breadcrumbItems}
           title="Let’s Build Smarter Digital Systems"
           subtitle="Have a project in mind, a business challenge to solve, or simply exploring new opportunities? Reach out to us."
-description="Highland Group helps businesses grow with websites, AI automation, mobile apps, and digital marketing—built for real business results."        />
+          description="Highland Group helps businesses grow with websites, AI automation, mobile apps, and digital marketing—built for real business results."
+        />
       </div>
-
 
       <section className="py-20 md:py-28 px-6" id="contact-form">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
-
           {/* Left Side */}
           <div className="lg:col-span-5 space-y-12 order-2 lg:order-1">
             <div className="relative z-10 space-y-8 text-left">
@@ -37,7 +144,9 @@ description="Highland Group helps businesses grow with websites, AI automation, 
               </h2>
 
               <p className="text-md text-muted max-w-md leading-relaxed">
-                Whether you need a high-performing website, a direct booking system, a mobile app, stronger online visibility, or smarter automation, Highland Group is ready to help.
+                Whether you need a high-performing website, a direct booking
+                system, a mobile app, stronger online visibility, or smarter
+                automation, Highland Group is ready to help.
               </p>
             </div>
 
@@ -62,7 +171,9 @@ description="Highland Group helps businesses grow with websites, AI automation, 
               <form className="relative z-10 space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-accent-red ml-1">First Name</label>
+                    <label className="text-sm font-semibold text-accent-red ml-1">
+                      First Name
+                    </label>
                     <input
                       type="text"
                       className="w-full px-6 py-4 bg-bg-soft rounded-2xl focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all"
@@ -70,8 +181,11 @@ description="Highland Group helps businesses grow with websites, AI automation, 
                       required
                     />
                   </div>
+
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-accent-red ml-1">Last Name</label>
+                    <label className="text-sm font-semibold text-accent-red ml-1">
+                      Last Name
+                    </label>
                     <input
                       type="text"
                       className="w-full px-6 py-4 bg-bg-soft rounded-2xl focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all"
@@ -82,7 +196,9 @@ description="Highland Group helps businesses grow with websites, AI automation, 
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-accent-red ml-1">Email Address</label>
+                  <label className="text-sm font-semibold text-accent-red ml-1">
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     className="w-full px-6 py-4 bg-bg-soft rounded-2xl focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all"
@@ -92,7 +208,9 @@ description="Highland Group helps businesses grow with websites, AI automation, 
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-accent-red ml-1">Your Message</label>
+                  <label className="text-sm font-semibold text-accent-red ml-1">
+                    Your Message
+                  </label>
                   <textarea
                     rows={5}
                     className="w-full px-6 py-4 bg-bg-soft rounded-2xl focus:border-accent-red focus:ring-4 focus:ring-accent-red/20 outline-none transition-all resize-none"
@@ -111,7 +229,6 @@ description="Highland Group helps businesses grow with websites, AI automation, 
               </form>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -128,6 +245,7 @@ description="Highland Group helps businesses grow with websites, AI automation, 
               <a
                 href="https://maps.app.goo.gl/wC5QgkJp5MQJ7e8M9"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:underline"
               >
                 Bahnhofstrasse 21, 3860 Meiringen, Switzerland
@@ -144,28 +262,15 @@ description="Highland Group helps businesses grow with websites, AI automation, 
           <div>
             <p className="text-xs text-accent-red font-bold uppercase">Email Us</p>
             <p className="text-sm font-medium">
-              <a href="mailto:highlandgroupgmbh@gmail.com" className="hover:underline">
+              <a
+                href="mailto:highlandgroupgmbh@gmail.com"
+                className="hover:underline"
+              >
                 highlandgroupgmbh@gmail.com
               </a>
             </p>
           </div>
         </div>
-
-        {/* Phone / WhatsApp */}
-        {/* <div className="flex items-center gap-4 p-6 h-36 rounded-2xl bg-bg-main shadow-md border border-border-light">
-          <div className="w-14 h-14 flex items-center justify-center bg-accent-red/20 text-accent-red rounded-xl">
-            <Phone className="w-7 h-7" />
-          </div>
-          <div>
-            <p className="text-xs text-accent-red font-bold uppercase">Call / WhatsApp</p>
-            <p className="text-sm font-medium">
-              <a href="tel:+4915223506691" className="hover:underline">+49 1522 3506691</a> |{" "}
-              <a href="https://wa.me/4915223506691" target="_blank" className="hover:underline">
-                WhatsApp
-              </a>
-            </p>
-          </div>
-        </div> */}
       </section>
     </main>
   );

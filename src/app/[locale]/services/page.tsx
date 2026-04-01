@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import {
   ArrowRight,
@@ -13,56 +14,105 @@ import {
   Settings,
 } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Services | Highland Group Swiss IT Solutions",
+  description:
+    "Explore Highland Group services including website development, hotel direct booking solutions, mobile app development, digital marketing, and AI automation.",
+  keywords: [
+    "Swiss IT services",
+    "website development Switzerland",
+    "hotel booking system Switzerland",
+    "AI automation Switzerland",
+    "digital marketing Switzerland",
+    "mobile app development Switzerland",
+    "Highland Group services",
+    "Swiss business solutions",
+    "digital agency Switzerland",
+  ],
+  alternates: {
+    canonical: "http://highlandgroup.ch/en/services",
+  },
+  openGraph: {
+    title: "Services | Highland Group Swiss IT Solutions",
+    description:
+      "Discover digital services for Swiss businesses including websites, hotel booking systems, apps, AI automation, and digital marketing.",
+    url: "http://highlandgroup.ch/en/services",
+    siteName: "Highland Group",
+    type: "website",
+    locale: "en_CH",
+    images: [
+      {
+        url: "http://highlandgroup.ch/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Highland Group Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services | Highland Group Swiss IT Solutions",
+    description:
+      "Discover digital services for Swiss businesses including websites, hotel booking systems, apps, AI automation, and digital marketing.",
+    images: ["http://highlandgroup.ch/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function ServicesPage({
   params,
 }: {
   params: { locale: string };
 }) {
-  const locale = params?.locale || "en"; // ✅ now works
+  const locale = params?.locale || "en";
+
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Services" },
   ];
 
   const services = [
-        {
-      slug: 'ai-automation',
+    {
+      slug: "ai-automation",
       icon: Bot,
       title: "AI Automation",
       body: "Chatbots, WhatsApp assistants, AI booking tools, lead automation, and workflow systems that save time and improve service quality.",
-      bgImage: "/assets/img-17.jpeg",      
+      bgImage: "/assets/img-17.jpeg",
     },
     {
-      slug: 'website-development',
+      slug: "website-development",
       icon: Globe,
       title: "Website Development",
       body: "Modern, responsive, and conversion-focused websites built to strengthen your digital presence and generate more inquiries, bookings, and sales.",
       bgImage: "/assets/img-13.png",
     },
     {
-      slug: 'hotel-booking-systems',
+      slug: "hotel-booking-systems",
       icon: Hotel,
       title: "Hotel Direct Booking Solutions",
       body: "Booking-focused hotel websites and direct reservation systems that help reduce OTA dependence and improve profitability.",
       bgImage: "/assets/img-14.png",
     },
     {
-      slug: 'mobile-app-development',
+      slug: "mobile-app-development",
       icon: Smartphone,
       title: "Mobile App Development",
       body: "Custom mobile apps for bookings, customer engagement, appointments, and business operations across iOS and Android.",
       bgImage: "/assets/img-15.png",
     },
     {
-      slug: 'digital-marketing',
+      slug: "digital-marketing",
       icon: Megaphone,
       title: "Digital Marketing",
       body: "SEO, Google Ads, Google Business Profile optimisation, and targeted campaigns that help businesses attract more qualified customers online.",
       bgImage: "/assets/img-16.png",
     },
-
     {
-      slug: 'consulting-growth-support',
+      slug: "consulting-growth-support",
       icon: Lightbulb,
       title: "Consulting & Growth Support",
       body: "Strategic advice, digital planning, and ongoing optimisation to help businesses build better systems and improve long-term results.",
@@ -103,28 +153,90 @@ export default function ServicesPage({
     },
   ];
 
+  const servicesPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Highland Group Services",
+    url: "http://highlandgroup.ch/en/services",
+    inLanguage: "en",
+    description:
+      "Explore Highland Group services including website development, hotel direct booking solutions, mobile app development, digital marketing, AI automation, and consulting for Swiss businesses.",
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: services.map((service, index) => ({
+        "@type": "Service",
+        position: index + 1,
+        name: service.title,
+        description: service.body,
+        url: `http://highlandgroup.ch/en/services/${service.slug}`,
+        provider: {
+          "@type": "Organization",
+          name: "Highland Group",
+          url: "http://highlandgroup.ch",
+          logo: "http://highlandgroup.ch/logo.png",
+        },
+        areaServed: {
+          "@type": "Country",
+          name: "Switzerland",
+        },
+      })),
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "http://highlandgroup.ch/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "http://highlandgroup.ch/en/services",
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-bg-soft text-charcoal selection:bg-accent-red/20 selection:text-charcoal">
-      {/* Hero */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(servicesPageSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
       <Breadcrumb
         items={breadcrumbItems}
         title="Digital Solutions Built for Business Growth"
         subtitle="Highland Group provides practical digital services for businesses that want stronger visibility, better customer experience, and measurable growth."
-        description="We help Swiss hotels, tourism companies, and local businesses improve performance through modern websites, AI automation, mobile apps,  and digital marketing."
+        description="We help Swiss hotels, tourism companies, and local businesses improve performance through modern websites, AI automation, mobile apps, and digital marketing."
       />
 
-
-      {/* Services Section */}
-      <section className="py-16  border-b border-border-light bg-bg-soft">
+      <section className="py-16 border-b border-border-light bg-bg-soft">
         <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               What We Do Best
             </h2>
             <p className="mt-6 max-w-3xl text-lg text-muted">
-              We combine business strategy, technology, and digital execution to create solutions that do more than look good — they are designed to perform.
+              We combine business strategy, technology, and digital execution to
+              create solutions that do more than look good — they are designed to
+              perform.
             </p>
           </div>
+
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
               const Icon = service.icon;
@@ -133,11 +245,9 @@ export default function ServicesPage({
                 <Link
                   key={service.slug}
                   href={`/${locale}/services/${service.slug}`}
-                  className="h-full"   // ✅ important
+                  className="h-full"
                 >
-                  <article
-                    className="group relative h-full flex flex-col rounded-2xl border border-border-light overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all"
-                  >
+                  <article className="group relative h-full flex flex-col rounded-2xl border border-border-light overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all">
                     <div
                       className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:opacity-20"
                       style={{ backgroundImage: `url(${service.bgImage})` }}
@@ -164,15 +274,13 @@ export default function ServicesPage({
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16 ">
+      <section className="py-16">
         <div className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-16">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Why Choose Us?
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Why Choose Us?</h2>
             <p className="mt-4 text-lg text-muted max-w-2xl">
-              Highland Group is not just a service provider — we are a digital growth partner focused on real business outcomes.
+              Highland Group is not just a service provider — we are a digital
+              growth partner focused on real business outcomes.
             </p>
           </div>
 
